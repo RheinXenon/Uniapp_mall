@@ -4,13 +4,14 @@
 		<view class="search-bar">
 			<view class="search-input">
 				<text class="search-icon">🔍</text>
-				<input type="text" placeholder="搜索商品" v-model="searchKeyword" @confirm="onSearch" />
+				<input type="text" placeholder="搜索商品" v-model="searchKeyword" @confirm="onSearch" @input="onSearchInput" />
+				<text class="clear-search" v-if="isSearchMode" @click="clearSearch">✕</text>
 			</view>
 		</view>
 		
 		<view class="category-content">
-			<!-- 左侧分类列表 -->
-			<scroll-view class="category-sidebar" scroll-y="true">
+			<!-- 左侧分类列表 - 搜索模式下隐藏 -->
+			<scroll-view class="category-sidebar" scroll-y="true" v-if="!isSearchMode">
 				<view 
 					class="category-item" 
 					:class="{ active: currentCategory === index }"
@@ -23,7 +24,13 @@
 			</scroll-view>
 			
 			<!-- 右侧商品列表 -->
-			<scroll-view class="product-content" scroll-y="true">
+			<scroll-view class="product-content" :class="{ 'full-width': isSearchMode }" scroll-y="true">
+				<!-- 搜索结果标题 -->
+				<view class="search-result-header" v-if="isSearchMode">
+					<text class="search-result-title">搜索结果 ({{currentProducts.length}})</text>
+					<text class="search-keyword">关键词: {{searchKeyword}}</text>
+				</view>
+				
 				<view class="product-grid">
 					<view 
 						class="product-item" 
@@ -41,6 +48,12 @@
 						</view>
 					</view>
 				</view>
+				
+				<!-- 无搜索结果提示 -->
+				<view class="no-result" v-if="isSearchMode && currentProducts.length === 0">
+					<text class="no-result-text">未找到相关商品</text>
+					<text class="no-result-tip">请尝试其他关键词</text>
+				</view>
 			</scroll-view>
 		</view>
 	</view>
@@ -52,6 +65,8 @@
 			return {
 				searchKeyword: '',
 				currentCategory: 0,
+				isSearchMode: false,
+				searchResults: [],
 				categories: [
 					{ name: '数码电子', id: 1 },
 					{ name: '服装鞋帽', id: 2 },
@@ -130,7 +145,20 @@
 		},
 		computed: {
 			currentProducts() {
+				// 如果处于搜索模式，返回搜索结果
+				if (this.isSearchMode) {
+					return this.searchResults
+				}
+				// 否则返回当前分类的商品
 				return this.allProducts[this.currentCategory] || []
+			},
+			// 获取所有商品的扁平化数组，用于搜索
+			flatProducts() {
+				let allProducts = []
+				this.allProducts.forEach(categoryProducts => {
+					allProducts = allProducts.concat(categoryProducts)
+				})
+				return allProducts
 			}
 		},
 		onLoad(options) {
@@ -140,11 +168,50 @@
 		},
 		methods: {
 			selectCategory(index) {
+				// 如果当前处于搜索模式，先清除搜索状态
+				if (this.isSearchMode) {
+					this.clearSearch()
+				}
 				this.currentCategory = index
 			},
 			onSearch() {
-				// 搜索功能
-				console.log('搜索:', this.searchKeyword)
+				// 执行搜索
+				this.performSearch()
+			},
+			onSearchInput() {
+				// 实时搜索（可选，这里我们在用户输入时也进行搜索）
+				if (this.searchKeyword.trim()) {
+					this.performSearch()
+				} else {
+					this.clearSearch()
+				}
+			},
+			performSearch() {
+				const keyword = this.searchKeyword.trim().toLowerCase()
+				if (!keyword) {
+					this.clearSearch()
+					return
+				}
+				
+				// 在所有商品中搜索
+				this.searchResults = this.flatProducts.filter(product => {
+					return product.name.toLowerCase().includes(keyword)
+				})
+				
+				this.isSearchMode = true
+				
+				// 显示搜索结果提示
+				if (this.searchResults.length === 0) {
+					uni.showToast({
+						title: '未找到相关商品',
+						icon: 'none'
+					})
+				}
+			},
+			clearSearch() {
+				this.searchKeyword = ''
+				this.searchResults = []
+				this.isSearchMode = false
 			},
 			goToProductDetail(product) {
 				uni.navigateTo({
@@ -179,6 +246,13 @@
 	.search-icon {
 		margin-right: 20rpx;
 		font-size: 32rpx;
+	}
+	
+	.clear-search {
+		margin-left: 20rpx;
+		font-size: 32rpx;
+		color: #999;
+		padding: 10rpx;
 	}
 	
 	.category-content {
@@ -224,6 +298,47 @@
 		flex: 1;
 		background-color: #fff;
 		padding: 20rpx;
+	}
+	
+	.product-content.full-width {
+		width: 100%;
+	}
+	
+	.search-result-header {
+		margin-bottom: 30rpx;
+		padding: 20rpx;
+		background-color: #f8f8f8;
+		border-radius: 10rpx;
+	}
+	
+	.search-result-title {
+		font-size: 32rpx;
+		font-weight: bold;
+		color: #333;
+		display: block;
+		margin-bottom: 10rpx;
+	}
+	
+	.search-keyword {
+		font-size: 28rpx;
+		color: #666;
+	}
+	
+	.no-result {
+		text-align: center;
+		padding: 100rpx 20rpx;
+	}
+	
+	.no-result-text {
+		font-size: 32rpx;
+		color: #999;
+		display: block;
+		margin-bottom: 20rpx;
+	}
+	
+	.no-result-tip {
+		font-size: 28rpx;
+		color: #ccc;
 	}
 	
 	.product-grid {
