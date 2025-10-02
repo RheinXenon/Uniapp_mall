@@ -57,35 +57,7 @@
 	export default {
 		data() {
 			return {
-				cartItems: [
-					{
-						id: 1,
-						name: 'iPhone 15 Pro',
-						price: 7999,
-						quantity: 1,
-						selected: true,
-						image: '/static/products/iphone15pro.jpg',
-						spec: '深空黑色 256GB'
-					},
-					{
-						id: 2,
-						name: 'MacBook Air',
-						price: 8999,
-						quantity: 1,
-						selected: true,
-						image: '/static/products/macbook-air.jpg',
-						spec: '银色 8GB+256GB'
-					},
-					{
-						id: 3,
-						name: 'AirPods Pro',
-						price: 1999,
-						quantity: 2,
-						selected: false,
-						image: '/static/products/airpods-pro.jpg',
-						spec: '白色'
-					}
-				]
+				cartItems: []
 			}
 		},
 		computed: {
@@ -104,35 +76,113 @@
 		onLoad() {
 			this.loadCartData()
 		},
+		onShow() {
+			// 页面显示时刷新购物车数据
+			this.loadCartData()
+		},
 		methods: {
-			loadCartData() {
-				// 加载购物车数据
-				console.log('加载购物车数据')
+			async loadCartData() {
+				try {
+					const cartManager = getApp().globalData.cartManager
+					const cartData = await cartManager.getCartData()
+					this.cartItems = cartData || []
+				} catch (error) {
+					console.error('加载购物车数据失败:', error)
+					uni.showToast({
+						title: '加载购物车数据失败',
+						icon: 'error'
+					})
+				}
 			},
-			toggleSelect(index) {
-				this.cartItems[index].selected = !this.cartItems[index].selected
+			async toggleSelect(index) {
+				const item = this.cartItems[index]
+				const cartManager = getApp().globalData.cartManager
+				
+				const result = await cartManager.toggleItemSelection(item.id, item.spec)
+				
+				if (result.success) {
+					this.cartItems[index].selected = !this.cartItems[index].selected
+				} else {
+					uni.showToast({
+						title: result.message || '操作失败',
+						icon: 'error'
+					})
+				}
 			},
-			toggleSelectAll() {
+			async toggleSelectAll() {
 				const shouldSelectAll = !this.isAllSelected
-				this.cartItems.forEach(item => {
-					item.selected = shouldSelectAll
-				})
+				const cartManager = getApp().globalData.cartManager
+				
+				const result = await cartManager.toggleSelectAll(shouldSelectAll)
+				
+				if (result.success) {
+					this.cartItems.forEach(item => {
+						item.selected = shouldSelectAll
+					})
+				} else {
+					uni.showToast({
+						title: result.message || '操作失败',
+						icon: 'error'
+					})
+				}
 			},
-			increaseQuantity(index) {
-				this.cartItems[index].quantity++
+			async increaseQuantity(index) {
+				const item = this.cartItems[index]
+				const newQuantity = item.quantity + 1
+				
+				const cartManager = getApp().globalData.cartManager
+				const result = await cartManager.updateQuantity(item.id, item.spec, newQuantity)
+				
+				if (result.success) {
+					this.cartItems[index].quantity = newQuantity
+				} else {
+					uni.showToast({
+						title: result.message || '更新失败',
+						icon: 'error'
+					})
+				}
 			},
-			decreaseQuantity(index) {
-				if (this.cartItems[index].quantity > 1) {
-					this.cartItems[index].quantity--
+			async decreaseQuantity(index) {
+				const item = this.cartItems[index]
+				if (item.quantity <= 1) return
+				
+				const newQuantity = item.quantity - 1
+				
+				const cartManager = getApp().globalData.cartManager
+				const result = await cartManager.updateQuantity(item.id, item.spec, newQuantity)
+				
+				if (result.success) {
+					this.cartItems[index].quantity = newQuantity
+				} else {
+					uni.showToast({
+						title: result.message || '更新失败',
+						icon: 'error'
+					})
 				}
 			},
 			removeItem(index) {
 				uni.showModal({
 					title: '确认删除',
 					content: '确定要删除这个商品吗？',
-					success: (res) => {
+					success: async (res) => {
 						if (res.confirm) {
-							this.cartItems.splice(index, 1)
+							const item = this.cartItems[index]
+							const cartManager = getApp().globalData.cartManager
+							
+							const result = await cartManager.removeFromCart(item.id, item.spec)
+							
+							if (result.success) {
+								this.cartItems.splice(index, 1)
+								uni.showToast({
+									title: '商品已删除',
+									icon: 'success'
+								})
+							} else {
+								uni.showToast({
+									title: result.message || '删除失败',
+									icon: 'error'
+								})
+							}
 						}
 					}
 				})

@@ -1,7 +1,14 @@
 <script>
+	import cartManager from './utils/cartManager.js'
+	
 	export default {
+		globalData: {
+			cartManager: cartManager
+		},
 		onLaunch: function() {
 			console.log('商城App启动')
+			// 初始化购物车管理器
+			this.globalData.cartManager = cartManager
 		},
 		onShow: function() {
 			console.log('商城App显示')

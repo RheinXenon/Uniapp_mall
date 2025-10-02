@@ -168,11 +168,18 @@
 			if (options.id) {
 				this.loadProductDetail(options.id)
 			}
+			this.updateCartCount()
+		},
+		onShow() {
+			// 页面显示时更新购物车数量
+			this.updateCartCount()
 		},
 		methods: {
 			loadProductDetail(id) {
 				// 根据ID加载商品详情
 				console.log('加载商品详情:', id)
+				// 这里可以根据实际需要从服务器加载商品详情
+				this.updateCartCount()
 			},
 			previewImage(index) {
 				uni.previewImage({
@@ -190,12 +197,19 @@
 					icon: 'success'
 				})
 			},
-			addToCart() {
+			async addToCart() {
+				const cartManager = getApp().globalData.cartManager
+				
+				const result = await cartManager.addToCart(this.product)
+				
 				uni.showToast({
-					title: '已加入购物车',
-					icon: 'success'
+					title: result.message,
+					icon: result.success ? 'success' : 'error'
 				})
-				this.cartCount++
+				
+				if (result.success) {
+					this.cartCount = result.cartCount
+				}
 			},
 			buyNow() {
 				uni.showModal({
@@ -221,6 +235,11 @@
 					title: '跳转到客服页面',
 					icon: 'none'
 				})
+			},
+			async updateCartCount() {
+				const cartManager = getApp().globalData.cartManager
+				const cartData = await cartManager.getCartData()
+				this.cartCount = cartManager.getCartCount(cartData)
 			}
 		}
 	}

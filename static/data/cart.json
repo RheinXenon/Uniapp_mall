@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro",
+      "price": 7999,
+      "quantity": 1,
+      "selected": true,
+      "image": "/static/products/iphone15pro.jpg",
+      "spec": "深空黑色 256GB",
+      "addTime": "2024-01-15T10:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "MacBook Air",
+      "price": 8999,
+      "quantity": 1,
+      "selected": true,
+      "image": "/static/products/macbook-air.jpg", 
+      "spec": "银色 8GB+256GB",
+      "addTime": "2024-01-14T15:20:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "AirPods Pro",
+      "price": 1999,
+      "quantity": 2,
+      "selected": false,
+      "image": "/static/products/airpods-pro.jpg",
+      "spec": "白色",
+      "addTime": "2024-01-13T09:45:00.000Z"
+    }
+  ],
+  "updateTime": "2024-01-15T10:30:00.000Z"
+}
