@@ -175,7 +175,7 @@
 			goToAbout() {
 				uni.showModal({
 					title: '关于我们',
-					content: '这是一个简单的在线商城UniApp\n版本：1.0.0\n开发者：UniApp团队',
+					content: '这是一个简单的在线商城UniApp\n软件工程课程作业\n版本：1.0.0\n开发者：RheinXenon',
 					showCancel: false
 				})
 			},

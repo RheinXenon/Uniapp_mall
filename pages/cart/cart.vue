@@ -225,6 +225,7 @@
 		margin: 20rpx;
 		border-radius: 20rpx;
 		padding: 20rpx;
+		box-sizing: border-box;
 	}
 	
 	.cart-item {
@@ -232,6 +233,8 @@
 		align-items: center;
 		padding: 20rpx 0;
 		border-bottom: 1rpx solid #f5f5f5;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	
 	.cart-item:last-child {
@@ -271,6 +274,8 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
+		min-width: 0;
+		overflow: hidden;
 	}
 	
 	.item-name {
@@ -306,6 +311,7 @@
 		border: 1rpx solid #ddd;
 		border-radius: 10rpx;
 		overflow: hidden;
+		flex-shrink: 0;
 	}
 	
 	.quantity-btn {
@@ -335,6 +341,12 @@
 	.item-delete {
 		margin-left: 20rpx;
 		padding: 10rpx;
+		width: 60rpx;
+		height: 60rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
 	}
 	
 	.delete-icon {
