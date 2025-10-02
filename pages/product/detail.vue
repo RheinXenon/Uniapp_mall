@@ -109,9 +109,9 @@
 					price: 7999,
 					originalPrice: 8999,
 					images: [
-						'https://via.placeholder.com/750x750/FF6B35/FFFFFF?text=iPhone+正面',
-						'https://via.placeholder.com/750x750/4ECDC4/FFFFFF?text=iPhone+背面',
-						'https://via.placeholder.com/750x750/45B7D1/FFFFFF?text=iPhone+侧面'
+						'/static/products/iphone15pro.jpg',
+						'/static/products/iphone15pro.jpg',
+						'/static/products/iphone15pro.jpg'
 					],
 					tags: ['官方正品', '全国联保', '7天无理由退货'],
 					specs: [
@@ -134,9 +134,9 @@
 						{ label: '操作系统', value: 'iOS 17' }
 					],
 					detailImages: [
-						'https://via.placeholder.com/750x1000/FF6B35/FFFFFF?text=商品详情1',
-						'https://via.placeholder.com/750x800/4ECDC4/FFFFFF?text=商品详情2',
-						'https://via.placeholder.com/750x900/45B7D1/FFFFFF?text=商品详情3'
+						'/static/products/iphone15pro.jpg',
+						'/static/products/iphone15pro.jpg',
+						'/static/products/iphone15pro.jpg'
 					],
 					reviews: [
 						{

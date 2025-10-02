@@ -80,28 +80,28 @@
 						name: 'iPhone 15 Pro',
 						price: 7999,
 						originalPrice: 8999,
-						image: 'https://via.placeholder.com/200x200/FF6B35/FFFFFF?text=iPhone'
+						image: '/static/products/iphone15pro.jpg'
 					},
 					{
 						id: 2,
 						name: 'MacBook Air',
 						price: 8999,
 						originalPrice: 9999,
-						image: 'https://via.placeholder.com/200x200/4ECDC4/FFFFFF?text=MacBook'
+						image: '/static/products/macbook-air.jpg'
 					},
 					{
 						id: 3,
 						name: 'AirPods Pro',
 						price: 1999,
 						originalPrice: 2299,
-						image: 'https://via.placeholder.com/200x200/45B7D1/FFFFFF?text=AirPods'
+						image: '/static/products/airpods-pro.jpg'
 					},
 					{
 						id: 4,
 						name: 'iPad Pro',
 						price: 5999,
 						originalPrice: 6999,
-						image: 'https://via.placeholder.com/200x200/96CEB4/FFFFFF?text=iPad'
+						image: '/static/products/ipad-pro.jpg'
 					}
 				]
 			}

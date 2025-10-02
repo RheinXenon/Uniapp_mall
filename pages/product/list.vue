@@ -81,7 +81,7 @@
 						price: 7999,
 						originalPrice: 8999,
 						sales: 1234,
-						image: 'https://via.placeholder.com/200x200/FF6B35/FFFFFF?text=iPhone',
+						image: '/static/products/iphone15pro.jpg',
 						tags: ['官方正品', '全国联保']
 					},
 					{
@@ -91,7 +91,7 @@
 						price: 8999,
 						originalPrice: 9999,
 						sales: 856,
-						image: 'https://via.placeholder.com/200x200/4ECDC4/FFFFFF?text=MacBook',
+						image: '/static/products/macbook-air.jpg',
 						tags: ['M2芯片', '轻薄便携']
 					},
 					{
@@ -101,7 +101,7 @@
 						price: 1999,
 						originalPrice: 2299,
 						sales: 2156,
-						image: 'https://via.placeholder.com/200x200/45B7D1/FFFFFF?text=AirPods',
+						image: '/static/products/airpods-pro.jpg',
 						tags: ['降噪', '无线充电']
 					},
 					{
@@ -111,7 +111,7 @@
 						price: 5999,
 						originalPrice: 6999,
 						sales: 678,
-						image: 'https://via.placeholder.com/200x200/96CEB4/FFFFFF?text=iPad',
+						image: '/static/products/ipad-pro.jpg',
 						tags: ['M2芯片', '专业级']
 					},
 					{
@@ -121,7 +121,7 @@
 						price: 2999,
 						originalPrice: 3299,
 						sales: 1456,
-						image: 'https://via.placeholder.com/200x200/FFEAA7/FFFFFF?text=Watch',
+						image: '/static/products/apple-watch.jpg',
 						tags: ['健康监测', '运动追踪']
 					},
 					{
@@ -131,7 +131,7 @@
 						price: 5999,
 						originalPrice: 6999,
 						sales: 432,
-						image: 'https://via.placeholder.com/200x200/74B9FF/FFFFFF?text=Galaxy',
+						image: '/static/products/galaxy-s24-ultra.jpg',
 						tags: ['200MP', 'S Pen']
 					}
 				]
