@@ -228,24 +228,31 @@
 
 <style>
 	.container {
-		background-color: #f5f5f5;
-		padding-bottom: 120rpx;
+		background-color: #f8f9fa;
+		padding-bottom: 140rpx;
+		min-height: 100vh;
 	}
 	
 	.product-images {
 		height: 750rpx;
 		background-color: #fff;
+		border-radius: 0 0 24rpx 24rpx;
+		overflow: hidden;
+		box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
 	}
 	
 	.product-image {
 		width: 100%;
 		height: 100%;
+		object-fit: cover;
 	}
 	
 	.product-info {
 		background-color: #fff;
-		padding: 30rpx;
-		margin-bottom: 20rpx;
+		padding: 40rpx 30rpx;
+		margin: 20rpx 20rpx 20rpx 20rpx;
+		border-radius: 24rpx;
+		box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
 	}
 	
 	.product-header {
@@ -274,10 +281,11 @@
 	}
 	
 	.current-price {
-		font-size: 48rpx;
+		font-size: 52rpx;
 		color: #FF6B35;
-		font-weight: bold;
+		font-weight: 700;
 		margin-right: 20rpx;
+		text-shadow: 0 2rpx 4rpx rgba(255, 107, 53, 0.2);
 	}
 	
 	.original-price {
@@ -288,11 +296,13 @@
 	}
 	
 	.discount {
-		background-color: #FF6B35;
+		background: linear-gradient(135deg, #FF6B35 0%, #FF8A65 100%);
 		color: #fff;
 		font-size: 24rpx;
-		padding: 8rpx 16rpx;
-		border-radius: 20rpx;
+		font-weight: 600;
+		padding: 10rpx 18rpx;
+		border-radius: 24rpx;
+		box-shadow: 0 4rpx 12rpx rgba(255, 107, 53, 0.3);
 	}
 	
 	.product-tags {
@@ -302,13 +312,16 @@
 	}
 	
 	.tag {
-		background-color: #FF6B35;
-		color: #fff;
+		background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+		color: #1976D2;
 		font-size: 24rpx;
-		padding: 8rpx 16rpx;
-		border-radius: 20rpx;
+		font-weight: 500;
+		padding: 12rpx 20rpx;
+		border-radius: 24rpx;
 		margin-right: 15rpx;
 		margin-bottom: 15rpx;
+		border: 1rpx solid rgba(25, 118, 210, 0.2);
+		box-shadow: 0 2rpx 8rpx rgba(25, 118, 210, 0.1);
 	}
 	
 	.product-specs {
@@ -339,26 +352,33 @@
 	
 	.product-detail {
 		background-color: #fff;
-		margin-bottom: 20rpx;
+		margin: 0 20rpx 20rpx 20rpx;
+		border-radius: 24rpx;
+		box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
+		overflow: hidden;
 	}
 	
 	.detail-tabs {
 		display: flex;
-		border-bottom: 1rpx solid #eee;
+		border-bottom: 1rpx solid rgba(0, 0, 0, 0.05);
+		background-color: #fafafa;
 	}
 	
 	.tab-item {
 		flex: 1;
 		text-align: center;
-		padding: 30rpx 0;
-		font-size: 32rpx;
+		padding: 32rpx 0;
+		font-size: 30rpx;
 		color: #666;
 		position: relative;
+		transition: all 0.3s ease;
+		font-weight: 500;
 	}
 	
 	.tab-item.active {
 		color: #FF6B35;
-		font-weight: bold;
+		font-weight: 600;
+		background-color: #fff;
 	}
 	
 	.tab-item.active::after {
@@ -367,9 +387,11 @@
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 60rpx;
-		height: 4rpx;
-		background-color: #FF6B35;
+		width: 80rpx;
+		height: 6rpx;
+		background: linear-gradient(135deg, #FF6B35 0%, #FF8A65 100%);
+		border-radius: 3rpx 3rpx 0 0;
+		box-shadow: 0 -2rpx 8rpx rgba(255, 107, 53, 0.3);
 	}
 	
 	.detail-content {
@@ -458,67 +480,192 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background-color: #fff;
-		padding: 20rpx;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 1) 100%);
+		backdrop-filter: blur(20rpx);
+		padding: 24rpx 30rpx 40rpx 30rpx;
 		display: flex;
 		align-items: center;
-		border-top: 1rpx solid #eee;
+		border-top: 1rpx solid rgba(0, 0, 0, 0.05);
 		z-index: 999;
+		box-shadow: 0 -8rpx 32rpx rgba(0, 0, 0, 0.08);
+		gap: 20rpx;
 	}
 	
 	.action-buttons {
 		display: flex;
-		margin-right: 20rpx;
+		gap: 20rpx;
+		flex-shrink: 0;
 	}
 	
 	.action-btn {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-right: 40rpx;
 		position: relative;
+		padding: 12rpx;
+		border-radius: 16rpx;
+		transition: all 0.3s ease;
+	}
+	
+	.action-btn:active {
+		transform: scale(0.95);
+		background-color: rgba(255, 107, 53, 0.1);
 	}
 	
 	.action-icon {
-		font-size: 40rpx;
+		font-size: 44rpx;
 		margin-bottom: 8rpx;
+		filter: drop-shadow(0 2rpx 4rpx rgba(0, 0, 0, 0.1));
 	}
 	
 	.action-label {
-		font-size: 24rpx;
+		font-size: 22rpx;
 		color: #666;
+		font-weight: 500;
 	}
 	
 	.cart-count {
 		position: absolute;
-		top: -10rpx;
-		right: -10rpx;
-		background-color: #FF6B35;
+		top: 4rpx;
+		right: 4rpx;
+		background: linear-gradient(135deg, #FF6B35 0%, #FF8A65 100%);
 		color: #fff;
 		font-size: 20rpx;
-		padding: 4rpx 8rpx;
-		border-radius: 20rpx;
-		min-width: 30rpx;
+		font-weight: bold;
+		padding: 6rpx 10rpx;
+		border-radius: 24rpx;
+		min-width: 32rpx;
 		text-align: center;
+		box-shadow: 0 4rpx 12rpx rgba(255, 107, 53, 0.4);
+		border: 2rpx solid #fff;
 	}
 	
 	.add-cart-btn {
-		background-color: #FF6B35;
+		background: linear-gradient(135deg, #FFB74D 0%, #FF9800 100%);
 		color: #fff;
-		border-radius: 50rpx;
-		padding: 25rpx 40rpx;
-		font-size: 32rpx;
-		margin-right: 20rpx;
+		border-radius: 24rpx;
+		padding: 20rpx 32rpx;
+		font-size: 30rpx;
+		font-weight: 600;
 		border: none;
+		min-width: 200rpx;
+		max-width: 240rpx;
+		flex: 1;
+		box-shadow: 0 8rpx 24rpx rgba(255, 152, 0, 0.3);
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+	.add-cart-btn::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+		transition: left 0.5s;
+	}
+	
+	.add-cart-btn:active::before {
+		left: 100%;
+	}
+	
+	.add-cart-btn:active {
+		transform: translateY(2rpx);
+		box-shadow: 0 4rpx 12rpx rgba(255, 152, 0, 0.4);
 	}
 	
 	.buy-now-btn {
-		background-color: #FF6B35;
+		background: linear-gradient(135deg, #FF6B35 0%, #E53935 100%);
 		color: #fff;
-		border-radius: 50rpx;
-		padding: 25rpx 40rpx;
-		font-size: 32rpx;
+		border-radius: 24rpx;
+		padding: 20rpx 32rpx;
+		font-size: 30rpx;
+		font-weight: 600;
 		border: none;
+		min-width: 200rpx;
+		max-width: 240rpx;
+		flex: 1;
+		box-shadow: 0 8rpx 24rpx rgba(255, 107, 53, 0.4);
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+	.buy-now-btn::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+		transition: left 0.5s;
+	}
+	
+	.buy-now-btn:active::before {
+		left: 100%;
+	}
+	
+	.buy-now-btn:active {
+		transform: translateY(2rpx);
+		box-shadow: 0 4rpx 12rpx rgba(255, 107, 53, 0.5);
+	}
+	
+	/* 响应式设计 - 针对小屏幕设备优化 */
+	@media screen and (max-width: 750rpx) {
+		.bottom-bar {
+			padding: 20rpx 24rpx 36rpx 24rpx;
+			gap: 16rpx;
+		}
+		
+		.action-buttons {
+			gap: 16rpx;
+		}
+		
+		.action-btn {
+			padding: 8rpx;
+		}
+		
+		.action-icon {
+			font-size: 40rpx;
+		}
+		
+		.action-label {
+			font-size: 20rpx;
+		}
+		
+		.add-cart-btn,
+		.buy-now-btn {
+			min-width: 180rpx;
+			max-width: 220rpx;
+			padding: 18rpx 28rpx;
+			font-size: 28rpx;
+		}
+	}
+	
+	/* 针对超小屏幕设备的进一步优化 */
+	@media screen and (max-width: 650rpx) {
+		.bottom-bar {
+			padding: 18rpx 20rpx 32rpx 20rpx;
+			gap: 12rpx;
+		}
+		
+		.action-buttons {
+			gap: 12rpx;
+		}
+		
+		.add-cart-btn,
+		.buy-now-btn {
+			min-width: 160rpx;
+			max-width: 200rpx;
+			padding: 16rpx 24rpx;
+			font-size: 26rpx;
+		}
 	}
 </style>
 
