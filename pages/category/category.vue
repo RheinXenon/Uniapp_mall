@@ -67,63 +67,63 @@
 				allProducts: [
 					// 数码电子
 					[
-						{ id: 1, name: 'iPhone 15 Pro', price: 7999, originalPrice: 8999, image: 'https://via.placeholder.com/200x200/FF6B35/FFFFFF?text=iPhone' },
-						{ id: 2, name: 'MacBook Air', price: 8999, originalPrice: 9999, image: 'https://via.placeholder.com/200x200/4ECDC4/FFFFFF?text=MacBook' },
-						{ id: 3, name: 'AirPods Pro', price: 1999, originalPrice: 2299, image: 'https://via.placeholder.com/200x200/45B7D1/FFFFFF?text=AirPods' },
-						{ id: 4, name: 'iPad Pro', price: 5999, originalPrice: 6999, image: 'https://via.placeholder.com/200x200/96CEB4/FFFFFF?text=iPad' },
-						{ id: 5, name: 'Apple Watch', price: 2999, originalPrice: 3299, image: 'https://via.placeholder.com/200x200/FFEAA7/FFFFFF?text=Watch' },
-						{ id: 6, name: 'Samsung Galaxy', price: 5999, originalPrice: 6999, image: 'https://via.placeholder.com/200x200/74B9FF/FFFFFF?text=Galaxy' }
+						{ id: 1, name: 'iPhone 15 Pro', price: 7999, originalPrice: 8999, image: '/static/products/iphone15pro.jpg' },
+						{ id: 2, name: 'MacBook Air', price: 8999, originalPrice: 9999, image: '/static/products/macbook-air.jpg' },
+						{ id: 3, name: 'AirPods Pro', price: 1999, originalPrice: 2299, image: '/static/products/airpods-pro.jpg' },
+						{ id: 4, name: 'iPad Pro', price: 5999, originalPrice: 6999, image: '/static/products/ipad-pro.jpg' },
+						{ id: 5, name: 'Apple Watch', price: 2999, originalPrice: 3299, image: '/static/products/apple-watch.jpg' },
+						{ id: 6, name: 'Samsung Galaxy', price: 5999, originalPrice: 6999, image: '/static/products/galaxy-s24-ultra.jpg' }
 					],
 					// 服装鞋帽
 					[
-						{ id: 7, name: 'Nike运动鞋', price: 899, originalPrice: 1099, image: 'https://via.placeholder.com/200x200/FF7675/FFFFFF?text=Nike' },
-						{ id: 8, name: 'Adidas外套', price: 599, originalPrice: 799, image: 'https://via.placeholder.com/200x200/6C5CE7/FFFFFF?text=Adidas' },
-						{ id: 9, name: '优衣库T恤', price: 99, originalPrice: 149, image: 'https://via.placeholder.com/200x200/A29BFE/FFFFFF?text=Uniqlo' },
-						{ id: 10, name: 'Zara连衣裙', price: 299, originalPrice: 399, image: 'https://via.placeholder.com/200x200/FD79A8/FFFFFF?text=Zara' }
+						{ id: 7, name: 'Nike运动鞋', price: 899, originalPrice: 1099, image: '/static/placeholders/clothing.svg' },
+						{ id: 8, name: 'Adidas外套', price: 599, originalPrice: 799, image: '/static/placeholders/clothing.svg' },
+						{ id: 9, name: '优衣库T恤', price: 99, originalPrice: 149, image: '/static/placeholders/clothing.svg' },
+						{ id: 10, name: 'Zara连衣裙', price: 299, originalPrice: 399, image: '/static/placeholders/clothing.svg' }
 					],
 					// 食品饮料
 					[
-						{ id: 11, name: '进口巧克力', price: 89, originalPrice: 129, image: 'https://via.placeholder.com/200x200/FDCB6E/FFFFFF?text=Chocolate' },
-						{ id: 12, name: '有机咖啡', price: 159, originalPrice: 199, image: 'https://via.placeholder.com/200x200/E17055/FFFFFF?text=Coffee' },
-						{ id: 13, name: '进口红酒', price: 299, originalPrice: 399, image: 'https://via.placeholder.com/200x200/6C5CE7/FFFFFF?text=Wine' }
+						{ id: 11, name: '进口巧克力', price: 89, originalPrice: 129, image: '/static/placeholders/food.svg' },
+						{ id: 12, name: '有机咖啡', price: 159, originalPrice: 199, image: '/static/placeholders/food.svg' },
+						{ id: 13, name: '进口红酒', price: 299, originalPrice: 399, image: '/static/placeholders/food.svg' }
 					],
 					// 家居生活
 					[
-						{ id: 14, name: '智能台灯', price: 299, originalPrice: 399, image: 'https://via.placeholder.com/200x200/FFEAA7/FFFFFF?text=Lamp' },
-						{ id: 15, name: '空气净化器', price: 1299, originalPrice: 1599, image: 'https://via.placeholder.com/200x200/74B9FF/FFFFFF?text=Purifier' },
-						{ id: 16, name: '扫地机器人', price: 1999, originalPrice: 2499, image: 'https://via.placeholder.com/200x200/00B894/FFFFFF?text=Robot' }
+						{ id: 14, name: '智能台灯', price: 299, originalPrice: 399, image: '/static/placeholders/home.svg' },
+						{ id: 15, name: '空气净化器', price: 1299, originalPrice: 1599, image: '/static/placeholders/home.svg' },
+						{ id: 16, name: '扫地机器人', price: 1999, originalPrice: 2499, image: '/static/placeholders/home.svg' }
 					],
 					// 运动户外
 					[
-						{ id: 17, name: '瑜伽垫', price: 199, originalPrice: 299, image: 'https://via.placeholder.com/200x200/00CEC9/FFFFFF?text=Yoga' },
-						{ id: 18, name: '跑步机', price: 2999, originalPrice: 3999, image: 'https://via.placeholder.com/200x200/FF7675/FFFFFF?text=Treadmill' },
-						{ id: 19, name: '登山包', price: 599, originalPrice: 799, image: 'https://via.placeholder.com/200x200/6C5CE7/FFFFFF?text=Backpack' }
+						{ id: 17, name: '瑜伽垫', price: 199, originalPrice: 299, image: '/static/placeholders/sports.svg' },
+						{ id: 18, name: '跑步机', price: 2999, originalPrice: 3999, image: '/static/placeholders/sports.svg' },
+						{ id: 19, name: '登山包', price: 599, originalPrice: 799, image: '/static/placeholders/sports.svg' }
 					],
 					// 美妆护肤
 					[
-						{ id: 20, name: 'SK-II精华', price: 1299, originalPrice: 1599, image: 'https://via.placeholder.com/200x200/FD79A8/FFFFFF?text=SK2' },
-						{ id: 21, name: '兰蔻面霜', price: 899, originalPrice: 1099, image: 'https://via.placeholder.com/200x200/FFEAA7/FFFFFF?text=Lancome' },
-						{ id: 22, name: '雅诗兰黛口红', price: 299, originalPrice: 399, image: 'https://via.placeholder.com/200x200/74B9FF/FFFFFF?text=Estee' }
+						{ id: 20, name: 'SK-II精华', price: 1299, originalPrice: 1599, image: '/static/placeholders/beauty.svg' },
+						{ id: 21, name: '兰蔻面霜', price: 899, originalPrice: 1099, image: '/static/placeholders/beauty.svg' },
+						{ id: 22, name: '雅诗兰黛口红', price: 299, originalPrice: 399, image: '/static/placeholders/beauty.svg' }
 					],
 					// 图书文具
 					[
-						{ id: 23, name: '编程书籍', price: 89, originalPrice: 129, image: 'https://via.placeholder.com/200x200/00B894/FFFFFF?text=Book' },
-						{ id: 24, name: '笔记本套装', price: 199, originalPrice: 299, image: 'https://via.placeholder.com/200x200/6C5CE7/FFFFFF?text=Notebook' }
+						{ id: 23, name: '编程书籍', price: 89, originalPrice: 129, image: '/static/placeholders/books.svg' },
+						{ id: 24, name: '笔记本套装', price: 199, originalPrice: 299, image: '/static/placeholders/books.svg' }
 					],
 					// 母婴用品
 					[
-						{ id: 25, name: '婴儿推车', price: 1299, originalPrice: 1599, image: 'https://via.placeholder.com/200x200/FF7675/FFFFFF?text=Stroller' },
-						{ id: 26, name: '儿童安全座椅', price: 1999, originalPrice: 2499, image: 'https://via.placeholder.com/200x200/00CEC9/FFFFFF?text=CarSeat' }
+						{ id: 25, name: '婴儿推车', price: 1299, originalPrice: 1599, image: '/static/placeholders/baby.svg' },
+						{ id: 26, name: '儿童安全座椅', price: 1999, originalPrice: 2499, image: '/static/placeholders/baby.svg' }
 					],
 					// 汽车用品
 					[
-						{ id: 27, name: '车载充电器', price: 99, originalPrice: 149, image: 'https://via.placeholder.com/200x200/FFEAA7/FFFFFF?text=Charger' },
-						{ id: 28, name: '汽车脚垫', price: 299, originalPrice: 399, image: 'https://via.placeholder.com/200x200/74B9FF/FFFFFF?text=Mat' }
+						{ id: 27, name: '车载充电器', price: 99, originalPrice: 149, image: '/static/placeholders/car.svg' },
+						{ id: 28, name: '汽车脚垫', price: 299, originalPrice: 399, image: '/static/placeholders/car.svg' }
 					],
 					// 宠物用品
 					[
-						{ id: 29, name: '宠物玩具', price: 59, originalPrice: 89, image: 'https://via.placeholder.com/200x200/00B894/FFFFFF?text=Toy' },
-						{ id: 30, name: '宠物食品', price: 199, originalPrice: 299, image: 'https://via.placeholder.com/200x200/6C5CE7/FFFFFF?text=Food' }
+						{ id: 29, name: '宠物玩具', price: 59, originalPrice: 89, image: '/static/placeholders/pet.svg' },
+						{ id: 30, name: '宠物食品', price: 199, originalPrice: 299, image: '/static/placeholders/pet.svg' }
 					]
 				]
 			}

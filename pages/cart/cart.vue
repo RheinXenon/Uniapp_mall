@@ -2,7 +2,7 @@
 	<view class="container">
 		<!-- 购物车为空 -->
 		<view class="empty-cart" v-if="cartItems.length === 0">
-			<image src="https://via.placeholder.com/200x200/FF6B35/FFFFFF?text=购物车" class="empty-icon"></image>
+			<image src="/static/tabbar/cart.svg" class="empty-icon"></image>
 			<text class="empty-text">购物车还是空的</text>
 			<text class="empty-desc">快去选购心仪的商品吧</text>
 			<button class="go-shopping-btn" @click="goShopping">去购物</button>
@@ -64,7 +64,7 @@
 						price: 7999,
 						quantity: 1,
 						selected: true,
-						image: 'https://via.placeholder.com/200x200/FF6B35/FFFFFF?text=iPhone',
+						image: '/static/products/iphone15pro.jpg',
 						spec: '深空黑色 256GB'
 					},
 					{
@@ -73,7 +73,7 @@
 						price: 8999,
 						quantity: 1,
 						selected: true,
-						image: 'https://via.placeholder.com/200x200/4ECDC4/FFFFFF?text=MacBook',
+						image: '/static/products/macbook-air.jpg',
 						spec: '银色 8GB+256GB'
 					},
 					{
@@ -82,7 +82,7 @@
 						price: 1999,
 						quantity: 2,
 						selected: false,
-						image: 'https://via.placeholder.com/200x200/45B7D1/FFFFFF?text=AirPods',
+						image: '/static/products/airpods-pro.jpg',
 						spec: '白色'
 					}
 				]

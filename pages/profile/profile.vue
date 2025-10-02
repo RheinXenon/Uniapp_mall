@@ -107,7 +107,7 @@
 				userInfo: {
 					name: '用户昵称',
 					desc: '普通会员',
-					avatar: 'https://via.placeholder.com/120x120/FF6B35/FFFFFF?text=头像',
+					avatar: '/static/avatars/avatar1.svg',
 					orderCount: 12,
 					favoriteCount: 8,
 					couponCount: 3

@@ -141,21 +141,21 @@
 					reviews: [
 						{
 							name: '用户***123',
-							avatar: 'https://via.placeholder.com/80x80/FF6B35/FFFFFF?text=头像',
+							avatar: '/static/avatars/avatar1.svg',
 							rating: 5,
 							date: '2024-01-15',
 							content: '手机很漂亮，拍照效果很好，系统流畅，值得购买！'
 						},
 						{
 							name: '用户***456',
-							avatar: 'https://via.placeholder.com/80x80/4ECDC4/FFFFFF?text=头像',
+							avatar: '/static/avatars/avatar2.svg',
 							rating: 5,
 							date: '2024-01-10',
 							content: '钛金属手感很好，重量适中，电池续航也不错。'
 						},
 						{
 							name: '用户***789',
-							avatar: 'https://via.placeholder.com/80x80/45B7D1/FFFFFF?text=头像',
+							avatar: '/static/avatars/avatar3.svg',
 							rating: 4,
 							date: '2024-01-08',
 							content: '整体不错，就是价格有点贵，不过质量确实好。'

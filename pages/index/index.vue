@@ -52,15 +52,15 @@
 				searchKeyword: '',
 				banners: [
 					{
-						image: 'https://via.placeholder.com/750x300/FF6B35/FFFFFF?text=轮播图1',
+						image: '/static/products/iphone15pro.jpg',
 						link: '/pages/product/list'
 					},
 					{
-						image: 'https://via.placeholder.com/750x300/4ECDC4/FFFFFF?text=轮播图2',
+						image: '/static/products/macbook-air.jpg',
 						link: '/pages/product/list'
 					},
 					{
-						image: 'https://via.placeholder.com/750x300/45B7D1/FFFFFF?text=轮播图3',
+						image: '/static/products/airpods-pro.jpg',
 						link: '/pages/product/list'
 					}
 				],
