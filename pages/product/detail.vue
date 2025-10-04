@@ -96,6 +96,8 @@
 </template>
 
 <script>
+	import favoritesManager from '../../utils/favoritesManager.js'
+	
 	export default {
 		data() {
 			return {
@@ -112,8 +114,9 @@
 			this.updateCartCount()
 		},
 		onShow() {
-			// 页面显示时更新购物车数量
+			// 页面显示时更新购物车数量和收藏状态
 			this.updateCartCount()
+			this.updateFavoriteStatus()
 		},
 		methods: {
 			async loadProductDetail(id) {
@@ -128,6 +131,7 @@
 						const product = res.data.products.find(p => p.id == id)
 						if (product) {
 							this.product = product
+							this.updateFavoriteStatus()
 							console.log('商品详情加载完成:', product.name)
 						} else {
 							uni.showToast({
@@ -155,11 +159,39 @@
 				this.activeTab = tab
 			},
 			toggleFavorite() {
-				this.isFavorite = !this.isFavorite
-				uni.showToast({
-					title: this.isFavorite ? '已收藏' : '已取消收藏',
-					icon: 'success'
-				})
+				if (!this.product.id) return
+				
+				if (this.isFavorite) {
+					// 取消收藏
+					const result = favoritesManager.removeFavorite(this.product.id)
+					if (result.success) {
+						this.isFavorite = false
+						uni.showToast({
+							title: '已取消收藏',
+							icon: 'success'
+						})
+					} else {
+						uni.showToast({
+							title: result.message,
+							icon: 'error'
+						})
+					}
+				} else {
+					// 添加收藏
+					const result = favoritesManager.addToFavorites(this.product)
+					if (result.success) {
+						this.isFavorite = true
+						uni.showToast({
+							title: '已添加到收藏',
+							icon: 'success'
+						})
+					} else {
+						uni.showToast({
+							title: result.message,
+							icon: 'error'
+						})
+					}
+				}
 			},
 			async addToCart() {
 				const cartManager = getApp().globalData.cartManager
@@ -204,6 +236,13 @@
 				const cartManager = getApp().globalData.cartManager
 				const cartData = await cartManager.getCartData()
 				this.cartCount = cartManager.getCartCount(cartData)
+			},
+			
+			// 更新收藏状态
+			updateFavoriteStatus() {
+				if (this.product.id) {
+					this.isFavorite = favoritesManager.isFavorite(this.product.id)
+				}
 			}
 		}
 	}

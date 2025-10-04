@@ -123,10 +123,24 @@
 		onLoad() {
 			this.loadUserData()
 		},
+		onShow() {
+			this.loadUserData()
+		},
 		methods: {
 			loadUserData() {
 				// 加载用户数据
+				this.updateFavoriteCount()
 				console.log('加载用户数据')
+			},
+			
+			// 更新收藏数量
+			updateFavoriteCount() {
+				try {
+					const favoritesManager = require('../../utils/favoritesManager.js').default
+					this.userInfo.favoriteCount = favoritesManager.getFavoriteCount()
+				} catch (error) {
+					console.error('更新收藏数量失败:', error)
+				}
 			},
 			changeAvatar() {
 				uni.chooseImage({
@@ -137,15 +151,13 @@
 				})
 			},
 			goToOrders(status = '') {
-				uni.showToast({
-					title: '跳转到订单页面',
-					icon: 'none'
+				uni.navigateTo({
+					url: `/pages/orders/orders${status ? '?status=' + status : ''}`
 				})
 			},
 			goToFavorites() {
-				uni.showToast({
-					title: '跳转到收藏页面',
-					icon: 'none'
+				uni.navigateTo({
+					url: '/pages/favorites/favorites'
 				})
 			},
 			goToCoupons() {

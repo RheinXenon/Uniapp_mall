@@ -1,0 +1,396 @@
+{
+  "favorites": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro 深空黑色 256GB",
+      "desc": "全新A17 Pro芯片，钛金属设计，专业级摄像头系统",
+      "price": 7999,
+      "originalPrice": 8999,
+      "sales": 1234,
+      "image": "/static/products/iphone15pro.jpg",
+      "images": [
+        "/static/products/iphone15pro.jpg",
+        "/static/products/iphone15pro.jpg",
+        "/static/products/iphone15pro.jpg"
+      ],
+      "tags": ["官方正品", "全国联保", "7天无理由退货"],
+      "categoryId": 1,
+      "categoryName": "数码",
+      "specs": [
+        { "label": "颜色", "value": "深空黑色" },
+        { "label": "存储", "value": "256GB" },
+        { "label": "屏幕", "value": "6.1英寸Super Retina XDR" },
+        { "label": "芯片", "value": "A17 Pro芯片" },
+        { "label": "摄像头", "value": "4800万像素主摄" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Apple" },
+        { "label": "型号", "value": "iPhone 15 Pro" },
+        { "label": "颜色", "value": "深空黑色" },
+        { "label": "存储容量", "value": "256GB" },
+        { "label": "屏幕尺寸", "value": "6.1英寸" },
+        { "label": "分辨率", "value": "2556×1179像素" },
+        { "label": "处理器", "value": "A17 Pro芯片" },
+        { "label": "摄像头", "value": "4800万像素主摄" },
+        { "label": "电池容量", "value": "3274mAh" },
+        { "label": "操作系统", "value": "iOS 17" }
+      ],
+      "detailImages": [
+        "/static/products/iphone15pro.jpg",
+        "/static/products/iphone15pro.jpg",
+        "/static/products/iphone15pro.jpg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***123",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-15",
+          "content": "手机很漂亮，拍照效果很好，系统流畅，值得购买！"
+        },
+        {
+          "name": "用户***456",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 5,
+          "date": "2024-01-10",
+          "content": "钛金属手感很好，重量适中，电池续航也不错。"
+        },
+        {
+          "name": "用户***789",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 4,
+          "date": "2024-01-08",
+          "content": "整体不错，就是价格有点贵，不过质量确实好。"
+        }
+      ],
+      "favoriteTime": "2024-01-20T10:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "AirPods Pro 第二代",
+      "desc": "主动降噪，空间音频，无线充电",
+      "price": 1999,
+      "originalPrice": 2299,
+      "sales": 2156,
+      "image": "/static/products/airpods-pro.jpg",
+      "images": [
+        "/static/products/airpods-pro.jpg",
+        "/static/products/airpods-pro.jpg",
+        "/static/products/airpods-pro.jpg"
+      ],
+      "tags": ["降噪", "无线充电", "空间音频"],
+      "categoryId": 1,
+      "categoryName": "数码",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "降噪", "value": "主动降噪" },
+        { "label": "续航", "value": "最长6小时" },
+        { "label": "充电", "value": "无线充电" },
+        { "label": "音频", "value": "空间音频" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Apple" },
+        { "label": "型号", "value": "AirPods Pro" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "降噪", "value": "主动降噪" },
+        { "label": "续航时间", "value": "最长6小时" },
+        { "label": "充电方式", "value": "无线充电" },
+        { "label": "音频技术", "value": "空间音频" },
+        { "label": "防水等级", "value": "IPX4" },
+        { "label": "重量", "value": "5.3g" }
+      ],
+      "detailImages": [
+        "/static/products/airpods-pro.jpg",
+        "/static/products/airpods-pro.jpg",
+        "/static/products/airpods-pro.jpg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***987",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-11",
+          "content": "降噪效果很好，音质也不错，佩戴舒适。"
+        },
+        {
+          "name": "用户***147",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 4,
+          "date": "2024-01-07",
+          "content": "空间音频效果很震撼，续航也够用。"
+        }
+      ],
+      "favoriteTime": "2024-01-19T15:45:00.000Z"
+    },
+    {
+      "id": 7,
+      "name": "Nike Air Max 270 运动鞋",
+      "desc": "经典气垫设计，舒适透气，时尚百搭",
+      "price": 899,
+      "originalPrice": 1099,
+      "sales": 234,
+      "image": "/static/placeholders/clothing.svg",
+      "images": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "tags": ["经典款", "气垫设计", "舒适透气"],
+      "categoryId": 2,
+      "categoryName": "服装",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "尺码", "value": "42码" },
+        { "label": "材质", "value": "网面+皮革" },
+        { "label": "鞋底", "value": "Air Max气垫" },
+        { "label": "适用", "value": "日常穿着" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Nike" },
+        { "label": "型号", "value": "Air Max 270" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "尺码", "value": "42码" },
+        { "label": "材质", "value": "网面+皮革" },
+        { "label": "鞋底技术", "value": "Air Max气垫" },
+        { "label": "重量", "value": "约320g" },
+        { "label": "产地", "value": "越南" }
+      ],
+      "detailImages": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***111",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-15",
+          "content": "鞋子很舒适，气垫设计很棒，走路不累脚。"
+        },
+        {
+          "name": "用户***222",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2024-01-12",
+          "content": "外观时尚，质量不错，性价比很高。"
+        }
+      ],
+      "favoriteTime": "2024-01-18T09:20:00.000Z"
+    },
+    {
+      "id": 11,
+      "name": "Godiva 进口巧克力礼盒",
+      "desc": "比利时进口，纯手工制作，口感丝滑",
+      "price": 89,
+      "originalPrice": 129,
+      "sales": 123,
+      "image": "/static/placeholders/food.svg",
+      "images": [
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg"
+      ],
+      "tags": ["进口", "手工制作", "丝滑口感"],
+      "categoryId": 3,
+      "categoryName": "食品",
+      "specs": [
+        { "label": "口味", "value": "混合口味" },
+        { "label": "重量", "value": "200g" },
+        { "label": "产地", "value": "比利时" },
+        { "label": "保质期", "value": "12个月" },
+        { "label": "包装", "value": "礼盒装" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Godiva" },
+        { "label": "型号", "value": "进口巧克力礼盒" },
+        { "label": "口味", "value": "混合口味" },
+        { "label": "重量", "value": "200g" },
+        { "label": "产地", "value": "比利时" },
+        { "label": "保质期", "value": "12个月" },
+        { "label": "包装", "value": "礼盒装" },
+        { "label": "储存", "value": "阴凉干燥处" }
+      ],
+      "detailImages": [
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***666",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-10",
+          "content": "巧克力很香浓，口感丝滑，包装精美，送礼很合适。"
+        }
+      ],
+      "favoriteTime": "2024-01-17T14:10:00.000Z"
+    },
+    {
+      "id": 14,
+      "name": "小米 智能台灯",
+      "desc": "智能调光，护眼设计，手机APP控制",
+      "price": 299,
+      "originalPrice": 399,
+      "sales": 234,
+      "image": "/static/placeholders/home.svg",
+      "images": [
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg"
+      ],
+      "tags": ["智能", "护眼", "APP控制"],
+      "categoryId": 4,
+      "categoryName": "家居",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "功率", "value": "12W" },
+        { "label": "亮度", "value": "可调节" },
+        { "label": "控制", "value": "APP+触摸" },
+        { "label": "材质", "value": "ABS塑料" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "小米" },
+        { "label": "型号", "value": "智能台灯" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "功率", "value": "12W" },
+        { "label": "亮度", "value": "可调节" },
+        { "label": "控制方式", "value": "APP+触摸" },
+        { "label": "材质", "value": "ABS塑料" },
+        { "label": "重量", "value": "约800g" }
+      ],
+      "detailImages": [
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***999",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-07",
+          "content": "台灯很智能，亮度调节很方便，护眼效果不错。"
+        }
+      ],
+      "favoriteTime": "2024-01-16T11:30:00.000Z"
+    },
+    {
+      "id": 20,
+      "name": "SK-II 神仙水精华",
+      "desc": "经典护肤，改善肌肤，提亮肤色",
+      "price": 1299,
+      "originalPrice": 1599,
+      "sales": 234,
+      "image": "/static/placeholders/beauty.svg",
+      "images": [
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg"
+      ],
+      "tags": ["经典护肤", "改善肌肤", "提亮肤色"],
+      "categoryId": 6,
+      "categoryName": "美妆",
+      "specs": [
+        { "label": "容量", "value": "230ml" },
+        { "label": "功效", "value": "保湿提亮" },
+        { "label": "肤质", "value": "所有肤质" },
+        { "label": "产地", "value": "日本" },
+        { "label": "保质期", "value": "36个月" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "SK-II" },
+        { "label": "型号", "value": "神仙水精华" },
+        { "label": "容量", "value": "230ml" },
+        { "label": "功效", "value": "保湿提亮" },
+        { "label": "适用肤质", "value": "所有肤质" },
+        { "label": "产地", "value": "日本" },
+        { "label": "保质期", "value": "36个月" },
+        { "label": "储存", "value": "阴凉干燥处" }
+      ],
+      "detailImages": [
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***555",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-01",
+          "content": "神仙水效果很好，用后肌肤明显改善，值得推荐。"
+        }
+      ],
+      "favoriteTime": "2024-01-15T16:45:00.000Z"
+    },
+    {
+      "id": 23,
+      "name": "《JavaScript高级程序设计》",
+      "desc": "前端开发经典教材，深入浅出，实用性强",
+      "price": 89,
+      "originalPrice": 129,
+      "sales": 456,
+      "image": "/static/placeholders/books.svg",
+      "images": [
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg"
+      ],
+      "tags": ["前端开发", "经典教材", "实用"],
+      "categoryId": 7,
+      "categoryName": "图书",
+      "specs": [
+        { "label": "作者", "value": "Nicholas C. Zakas" },
+        { "label": "页数", "value": "800页" },
+        { "label": "语言", "value": "中文" },
+        { "label": "出版社", "value": "人民邮电出版社" },
+        { "label": "版本", "value": "第4版" }
+      ],
+      "params": [
+        { "label": "书名", "value": "JavaScript高级程序设计" },
+        { "label": "作者", "value": "Nicholas C. Zakas" },
+        { "label": "页数", "value": "800页" },
+        { "label": "语言", "value": "中文" },
+        { "label": "出版社", "value": "人民邮电出版社" },
+        { "label": "版本", "value": "第4版" },
+        { "label": "ISBN", "value": "978-7-115-48789-0" },
+        { "label": "出版日期", "value": "2020年" }
+      ],
+      "detailImages": [
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***888",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2023-12-29",
+          "content": "书的内容很全面，讲解深入浅出，是学习JavaScript的好教材。"
+        }
+      ],
+      "favoriteTime": "2024-01-14T13:20:00.000Z"
+    }
+  ],
+  "metadata": {
+    "totalCount": 7,
+    "lastUpdated": "2024-01-20T10:30:00.000Z",
+    "categories": {
+      "数码": 2,
+      "服装": 1,
+      "食品": 1,
+      "家居": 1,
+      "美妆": 1,
+      "图书": 1
+    },
+    "priceStats": {
+      "total": 11672,
+      "average": 1667,
+      "min": 89,
+      "max": 7999
+    }
+  }
+}
