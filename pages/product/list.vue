@@ -73,68 +73,10 @@
 				hasMore: true,
 				page: 1,
 				pageSize: 10,
-				productList: [
-					{
-						id: 1,
-						name: 'iPhone 15 Pro 深空黑色 256GB',
-						desc: '全新A17 Pro芯片，钛金属设计',
-						price: 7999,
-						originalPrice: 8999,
-						sales: 1234,
-						image: '/static/products/iphone15pro.jpg',
-						tags: ['官方正品', '全国联保']
-					},
-					{
-						id: 2,
-						name: 'MacBook Air M2芯片 8GB+256GB',
-						desc: '13.6英寸Liquid Retina显示屏',
-						price: 8999,
-						originalPrice: 9999,
-						sales: 856,
-						image: '/static/products/macbook-air.jpg',
-						tags: ['M2芯片', '轻薄便携']
-					},
-					{
-						id: 3,
-						name: 'AirPods Pro 第二代',
-						desc: '主动降噪，空间音频',
-						price: 1999,
-						originalPrice: 2299,
-						sales: 2156,
-						image: '/static/products/airpods-pro.jpg',
-						tags: ['降噪', '无线充电']
-					},
-					{
-						id: 4,
-						name: 'iPad Pro 11英寸 M2芯片',
-						desc: 'Liquid Retina XDR显示屏',
-						price: 5999,
-						originalPrice: 6999,
-						sales: 678,
-						image: '/static/products/ipad-pro.jpg',
-						tags: ['M2芯片', '专业级']
-					},
-					{
-						id: 5,
-						name: 'Apple Watch Series 9',
-						desc: 'GPS + 蜂窝网络，45mm',
-						price: 2999,
-						originalPrice: 3299,
-						sales: 1456,
-						image: '/static/products/apple-watch.jpg',
-						tags: ['健康监测', '运动追踪']
-					},
-					{
-						id: 6,
-						name: 'Samsung Galaxy S24 Ultra',
-						desc: '200MP主摄，S Pen支持',
-						price: 5999,
-						originalPrice: 6999,
-						sales: 432,
-						image: '/static/products/galaxy-s24-ultra.jpg',
-						tags: ['200MP', 'S Pen']
-					}
-				]
+				productList: [],
+				allProducts: [],
+				categoryId: null,
+				categoryName: ''
 			}
 		},
 		onLoad(options) {
@@ -145,15 +87,67 @@
 			this.loadProducts()
 		},
 		methods: {
-			loadProducts() {
+			async loadProducts() {
 				this.loading = true
-				// 模拟加载数据
-				setTimeout(() => {
-					this.loading = false
-					if (this.page >= 3) {
-						this.hasMore = false
+				try {
+					// 如果是第一页，从JSON加载数据
+					if (this.page === 1) {
+						const res = await uni.request({
+							url: '/static/data/products.json',
+							method: 'GET'
+						})
+						
+						if (res.data && res.data.products) {
+							this.allProducts = res.data.products
+							
+							// 根据分类筛选
+							let filteredProducts = this.allProducts
+							if (this.categoryId) {
+								filteredProducts = this.allProducts.filter(product => product.categoryId == this.categoryId)
+							}
+							
+							// 根据搜索关键词筛选
+							if (this.searchKeyword) {
+								filteredProducts = filteredProducts.filter(product => 
+									product.name.includes(this.searchKeyword) || 
+									product.desc.includes(this.searchKeyword)
+								)
+							}
+							
+							// 排序
+							filteredProducts = this.sortProducts(filteredProducts)
+							
+							// 分页
+							const startIndex = (this.page - 1) * this.pageSize
+							const endIndex = startIndex + this.pageSize
+							this.productList = filteredProducts.slice(startIndex, endIndex)
+							
+							// 判断是否还有更多数据
+							this.hasMore = endIndex < filteredProducts.length
+						}
+					} else {
+						// 加载更多数据
+						const startIndex = (this.page - 1) * this.pageSize
+						const endIndex = startIndex + this.pageSize
+						const moreProducts = this.allProducts.slice(startIndex, endIndex)
+						
+						if (moreProducts.length > 0) {
+							this.productList = [...this.productList, ...moreProducts]
+							this.hasMore = endIndex < this.allProducts.length
+						} else {
+							this.hasMore = false
+						}
 					}
-				}, 1000)
+					
+					this.loading = false
+				} catch (error) {
+					console.error('加载商品数据失败:', error)
+					this.loading = false
+					uni.showToast({
+						title: '数据加载失败',
+						icon: 'error'
+					})
+				}
 			},
 			loadMore() {
 				if (this.loading || !this.hasMore) return
@@ -175,11 +169,25 @@
 					}
 				}
 				this.sortType = type
-				this.sortProducts()
+				this.page = 1
+				this.hasMore = true
+				this.loadProducts()
 			},
-			sortProducts() {
-				// 这里可以根据排序类型对商品进行排序
-				console.log('排序:', this.sortType, this.priceOrder)
+			sortProducts(products) {
+				if (!products) return products
+				
+				switch (this.sortType) {
+					case 'sales':
+						return products.sort((a, b) => b.sales - a.sales)
+					case 'price':
+						return products.sort((a, b) => {
+							return this.priceOrder === 'asc' ? a.price - b.price : b.price - a.price
+						})
+					case 'new':
+						return products.sort((a, b) => b.id - a.id)
+					default:
+						return products
+				}
 			},
 			goToProductDetail(product) {
 				uni.navigateTo({

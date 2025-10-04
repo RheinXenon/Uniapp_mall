@@ -1,0 +1,376 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro 深空黑色 256GB",
+      "desc": "全新A17 Pro芯片，钛金属设计，专业级摄像头系统",
+      "price": 7999,
+      "originalPrice": 8999,
+      "sales": 1234,
+      "image": "/static/products/iphone15pro.jpg",
+      "images": [
+        "/static/products/iphone15pro.jpg",
+        "/static/products/iphone15pro.jpg",
+        "/static/products/iphone15pro.jpg"
+      ],
+      "tags": ["官方正品", "全国联保", "7天无理由退货"],
+      "categoryId": 1,
+      "categoryName": "数码",
+      "specs": [
+        { "label": "颜色", "value": "深空黑色" },
+        { "label": "存储", "value": "256GB" },
+        { "label": "屏幕", "value": "6.1英寸Super Retina XDR" },
+        { "label": "芯片", "value": "A17 Pro芯片" },
+        { "label": "摄像头", "value": "4800万像素主摄" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Apple" },
+        { "label": "型号", "value": "iPhone 15 Pro" },
+        { "label": "颜色", "value": "深空黑色" },
+        { "label": "存储容量", "value": "256GB" },
+        { "label": "屏幕尺寸", "value": "6.1英寸" },
+        { "label": "分辨率", "value": "2556×1179像素" },
+        { "label": "处理器", "value": "A17 Pro芯片" },
+        { "label": "摄像头", "value": "4800万像素主摄" },
+        { "label": "电池容量", "value": "3274mAh" },
+        { "label": "操作系统", "value": "iOS 17" }
+      ],
+      "detailImages": [
+        "/static/products/iphone15pro.jpg",
+        "/static/products/iphone15pro.jpg",
+        "/static/products/iphone15pro.jpg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***123",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-15",
+          "content": "手机很漂亮，拍照效果很好，系统流畅，值得购买！"
+        },
+        {
+          "name": "用户***456",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 5,
+          "date": "2024-01-10",
+          "content": "钛金属手感很好，重量适中，电池续航也不错。"
+        },
+        {
+          "name": "用户***789",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 4,
+          "date": "2024-01-08",
+          "content": "整体不错，就是价格有点贵，不过质量确实好。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "MacBook Air M2芯片 8GB+256GB",
+      "desc": "13.6英寸Liquid Retina显示屏，轻薄便携",
+      "price": 8999,
+      "originalPrice": 9999,
+      "sales": 856,
+      "image": "/static/products/macbook-air.jpg",
+      "images": [
+        "/static/products/macbook-air.jpg",
+        "/static/products/macbook-air.jpg",
+        "/static/products/macbook-air.jpg"
+      ],
+      "tags": ["M2芯片", "轻薄便携", "长续航"],
+      "categoryId": 1,
+      "categoryName": "数码",
+      "specs": [
+        { "label": "颜色", "value": "银色" },
+        { "label": "存储", "value": "8GB+256GB" },
+        { "label": "屏幕", "value": "13.6英寸Liquid Retina" },
+        { "label": "芯片", "value": "M2芯片" },
+        { "label": "重量", "value": "1.24kg" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Apple" },
+        { "label": "型号", "value": "MacBook Air" },
+        { "label": "颜色", "value": "银色" },
+        { "label": "内存", "value": "8GB" },
+        { "label": "存储容量", "value": "256GB" },
+        { "label": "屏幕尺寸", "value": "13.6英寸" },
+        { "label": "分辨率", "value": "2560×1664像素" },
+        { "label": "处理器", "value": "M2芯片" },
+        { "label": "重量", "value": "1.24kg" },
+        { "label": "操作系统", "value": "macOS" }
+      ],
+      "detailImages": [
+        "/static/products/macbook-air.jpg",
+        "/static/products/macbook-air.jpg",
+        "/static/products/macbook-air.jpg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***321",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-12",
+          "content": "M2芯片性能很强，日常办公完全够用，续航也很不错。"
+        },
+        {
+          "name": "用户***654",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2024-01-09",
+          "content": "轻薄便携，屏幕显示效果很好，适合移动办公。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "AirPods Pro 第二代",
+      "desc": "主动降噪，空间音频，无线充电",
+      "price": 1999,
+      "originalPrice": 2299,
+      "sales": 2156,
+      "image": "/static/products/airpods-pro.jpg",
+      "images": [
+        "/static/products/airpods-pro.jpg",
+        "/static/products/airpods-pro.jpg",
+        "/static/products/airpods-pro.jpg"
+      ],
+      "tags": ["降噪", "无线充电", "空间音频"],
+      "categoryId": 1,
+      "categoryName": "数码",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "降噪", "value": "主动降噪" },
+        { "label": "续航", "value": "最长6小时" },
+        { "label": "充电", "value": "无线充电" },
+        { "label": "音频", "value": "空间音频" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Apple" },
+        { "label": "型号", "value": "AirPods Pro" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "降噪", "value": "主动降噪" },
+        { "label": "续航时间", "value": "最长6小时" },
+        { "label": "充电方式", "value": "无线充电" },
+        { "label": "音频技术", "value": "空间音频" },
+        { "label": "防水等级", "value": "IPX4" },
+        { "label": "重量", "value": "5.3g" }
+      ],
+      "detailImages": [
+        "/static/products/airpods-pro.jpg",
+        "/static/products/airpods-pro.jpg",
+        "/static/products/airpods-pro.jpg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***987",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-11",
+          "content": "降噪效果很好，音质也不错，佩戴舒适。"
+        },
+        {
+          "name": "用户***147",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 4,
+          "date": "2024-01-07",
+          "content": "空间音频效果很震撼，续航也够用。"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "iPad Pro 11英寸 M2芯片",
+      "desc": "Liquid Retina XDR显示屏，专业级性能",
+      "price": 5999,
+      "originalPrice": 6999,
+      "sales": 678,
+      "image": "/static/products/ipad-pro.jpg",
+      "images": [
+        "/static/products/ipad-pro.jpg",
+        "/static/products/ipad-pro.jpg",
+        "/static/products/ipad-pro.jpg"
+      ],
+      "tags": ["M2芯片", "专业级", "XDR显示屏"],
+      "categoryId": 1,
+      "categoryName": "数码",
+      "specs": [
+        { "label": "颜色", "value": "深空灰色" },
+        { "label": "存储", "value": "128GB" },
+        { "label": "屏幕", "value": "11英寸Liquid Retina XDR" },
+        { "label": "芯片", "value": "M2芯片" },
+        { "label": "摄像头", "value": "1200万像素" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Apple" },
+        { "label": "型号", "value": "iPad Pro" },
+        { "label": "颜色", "value": "深空灰色" },
+        { "label": "存储容量", "value": "128GB" },
+        { "label": "屏幕尺寸", "value": "11英寸" },
+        { "label": "分辨率", "value": "2388×1668像素" },
+        { "label": "处理器", "value": "M2芯片" },
+        { "label": "摄像头", "value": "1200万像素" },
+        { "label": "重量", "value": "466g" },
+        { "label": "操作系统", "value": "iPadOS" }
+      ],
+      "detailImages": [
+        "/static/products/ipad-pro.jpg",
+        "/static/products/ipad-pro.jpg",
+        "/static/products/ipad-pro.jpg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***258",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 5,
+          "date": "2024-01-13",
+          "content": "M2芯片性能很强，适合专业创作，屏幕显示效果很棒。"
+        },
+        {
+          "name": "用户***369",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 4,
+          "date": "2024-01-06",
+          "content": "专业级性能，适合设计师和创作者使用。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Apple Watch Series 9",
+      "desc": "GPS + 蜂窝网络，45mm，健康监测",
+      "price": 2999,
+      "originalPrice": 3299,
+      "sales": 1456,
+      "image": "/static/products/apple-watch.jpg",
+      "images": [
+        "/static/products/apple-watch.jpg",
+        "/static/products/apple-watch.jpg",
+        "/static/products/apple-watch.jpg"
+      ],
+      "tags": ["健康监测", "运动追踪", "蜂窝网络"],
+      "categoryId": 1,
+      "categoryName": "数码",
+      "specs": [
+        { "label": "颜色", "value": "午夜色" },
+        { "label": "尺寸", "value": "45mm" },
+        { "label": "网络", "value": "GPS + 蜂窝网络" },
+        { "label": "健康", "value": "血氧监测" },
+        { "label": "运动", "value": "运动追踪" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Apple" },
+        { "label": "型号", "value": "Apple Watch Series 9" },
+        { "label": "颜色", "value": "午夜色" },
+        { "label": "尺寸", "value": "45mm" },
+        { "label": "网络", "value": "GPS + 蜂窝网络" },
+        { "label": "健康功能", "value": "血氧监测" },
+        { "label": "运动功能", "value": "运动追踪" },
+        { "label": "防水等级", "value": "50米防水" },
+        { "label": "续航", "value": "最长18小时" },
+        { "label": "操作系统", "value": "watchOS" }
+      ],
+      "detailImages": [
+        "/static/products/apple-watch.jpg",
+        "/static/products/apple-watch.jpg",
+        "/static/products/apple-watch.jpg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***741",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-14",
+          "content": "健康监测功能很全面，运动追踪也很准确。"
+        },
+        {
+          "name": "用户***852",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2024-01-05",
+          "content": "蜂窝网络很方便，不用带手机也能接电话。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy S24 Ultra",
+      "desc": "200MP主摄，S Pen支持，AI摄影",
+      "price": 5999,
+      "originalPrice": 6999,
+      "sales": 432,
+      "image": "/static/products/galaxy-s24-ultra.jpg",
+      "images": [
+        "/static/products/galaxy-s24-ultra.jpg",
+        "/static/products/galaxy-s24-ultra.jpg",
+        "/static/products/galaxy-s24-ultra.jpg"
+      ],
+      "tags": ["200MP", "S Pen", "AI摄影"],
+      "categoryId": 1,
+      "categoryName": "数码",
+      "specs": [
+        { "label": "颜色", "value": "钛黑色" },
+        { "label": "存储", "value": "256GB" },
+        { "label": "屏幕", "value": "6.8英寸Dynamic AMOLED 2X" },
+        { "label": "摄像头", "value": "200MP主摄" },
+        { "label": "手写笔", "value": "S Pen" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Samsung" },
+        { "label": "型号", "value": "Galaxy S24 Ultra" },
+        { "label": "颜色", "value": "钛黑色" },
+        { "label": "存储容量", "value": "256GB" },
+        { "label": "屏幕尺寸", "value": "6.8英寸" },
+        { "label": "分辨率", "value": "3120×1440像素" },
+        { "label": "处理器", "value": "Snapdragon 8 Gen 3" },
+        { "label": "摄像头", "value": "200MP主摄" },
+        { "label": "手写笔", "value": "S Pen" },
+        { "label": "操作系统", "value": "Android 14" }
+      ],
+      "detailImages": [
+        "/static/products/galaxy-s24-ultra.jpg",
+        "/static/products/galaxy-s24-ultra.jpg",
+        "/static/products/galaxy-s24-ultra.jpg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***963",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-16",
+          "content": "200MP摄像头拍照效果很棒，S Pen也很实用。"
+        },
+        {
+          "name": "用户***159",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 4,
+          "date": "2024-01-04",
+          "content": "AI摄影功能很强大，屏幕显示效果也很好。"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "数码", "icon": "📱" },
+    { "id": 2, "name": "服装", "icon": "👕" },
+    { "id": 3, "name": "食品", "icon": "🍎" },
+    { "id": 4, "name": "家居", "icon": "🏠" },
+    { "id": 5, "name": "运动", "icon": "⚽" },
+    { "id": 6, "name": "美妆", "icon": "💄" },
+    { "id": 7, "name": "图书", "icon": "📚" },
+    { "id": 8, "name": "更多", "icon": "➕" }
+  ],
+  "banners": [
+    {
+      "image": "/static/products/iphone15pro.jpg",
+      "link": "/pages/product/list"
+    },
+    {
+      "image": "/static/products/macbook-air.jpg",
+      "link": "/pages/product/list"
+    },
+    {
+      "image": "/static/products/airpods-pro.jpg",
+      "link": "/pages/product/list"
+    }
+  ]
+}

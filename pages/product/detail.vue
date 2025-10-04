@@ -102,66 +102,7 @@
 				activeTab: 'detail',
 				isFavorite: false,
 				cartCount: 3,
-				product: {
-					id: 1,
-					name: 'iPhone 15 Pro 深空黑色 256GB',
-					desc: '全新A17 Pro芯片，钛金属设计，专业级摄像头系统',
-					price: 7999,
-					originalPrice: 8999,
-					images: [
-						'/static/products/iphone15pro.jpg',
-						'/static/products/iphone15pro.jpg',
-						'/static/products/iphone15pro.jpg'
-					],
-					tags: ['官方正品', '全国联保', '7天无理由退货'],
-					specs: [
-						{ label: '颜色', value: '深空黑色' },
-						{ label: '存储', value: '256GB' },
-						{ label: '屏幕', value: '6.1英寸Super Retina XDR' },
-						{ label: '芯片', value: 'A17 Pro芯片' },
-						{ label: '摄像头', value: '4800万像素主摄' }
-					],
-					params: [
-						{ label: '品牌', value: 'Apple' },
-						{ label: '型号', value: 'iPhone 15 Pro' },
-						{ label: '颜色', value: '深空黑色' },
-						{ label: '存储容量', value: '256GB' },
-						{ label: '屏幕尺寸', value: '6.1英寸' },
-						{ label: '分辨率', value: '2556×1179像素' },
-						{ label: '处理器', value: 'A17 Pro芯片' },
-						{ label: '摄像头', value: '4800万像素主摄' },
-						{ label: '电池容量', value: '3274mAh' },
-						{ label: '操作系统', value: 'iOS 17' }
-					],
-					detailImages: [
-						'/static/products/iphone15pro.jpg',
-						'/static/products/iphone15pro.jpg',
-						'/static/products/iphone15pro.jpg'
-					],
-					reviews: [
-						{
-							name: '用户***123',
-							avatar: '/static/avatars/avatar1.svg',
-							rating: 5,
-							date: '2024-01-15',
-							content: '手机很漂亮，拍照效果很好，系统流畅，值得购买！'
-						},
-						{
-							name: '用户***456',
-							avatar: '/static/avatars/avatar2.svg',
-							rating: 5,
-							date: '2024-01-10',
-							content: '钛金属手感很好，重量适中，电池续航也不错。'
-						},
-						{
-							name: '用户***789',
-							avatar: '/static/avatars/avatar3.svg',
-							rating: 4,
-							date: '2024-01-08',
-							content: '整体不错，就是价格有点贵，不过质量确实好。'
-						}
-					]
-				}
+				product: {}
 			}
 		},
 		onLoad(options) {
@@ -175,11 +116,34 @@
 			this.updateCartCount()
 		},
 		methods: {
-			loadProductDetail(id) {
-				// 根据ID加载商品详情
-				console.log('加载商品详情:', id)
-				// 这里可以根据实际需要从服务器加载商品详情
-				this.updateCartCount()
+			async loadProductDetail(id) {
+				try {
+					// 从JSON文件加载商品详情
+					const res = await uni.request({
+						url: '/static/data/products.json',
+						method: 'GET'
+					})
+					
+					if (res.data && res.data.products) {
+						const product = res.data.products.find(p => p.id == id)
+						if (product) {
+							this.product = product
+							console.log('商品详情加载完成:', product.name)
+						} else {
+							uni.showToast({
+								title: '商品不存在',
+								icon: 'error'
+							})
+						}
+					}
+					this.updateCartCount()
+				} catch (error) {
+					console.error('加载商品详情失败:', error)
+					uni.showToast({
+						title: '数据加载失败',
+						icon: 'error'
+					})
+				}
 			},
 			previewImage(index) {
 				uni.previewImage({

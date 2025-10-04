@@ -50,69 +50,43 @@
 		data() {
 			return {
 				searchKeyword: '',
-				banners: [
-					{
-						image: '/static/products/iphone15pro.jpg',
-						link: '/pages/product/list'
-					},
-					{
-						image: '/static/products/macbook-air.jpg',
-						link: '/pages/product/list'
-					},
-					{
-						image: '/static/products/airpods-pro.jpg',
-						link: '/pages/product/list'
-					}
-				],
-				categories: [
-					{ name: '数码', icon: '📱', id: 1 },
-					{ name: '服装', icon: '👕', id: 2 },
-					{ name: '食品', icon: '🍎', id: 3 },
-					{ name: '家居', icon: '🏠', id: 4 },
-					{ name: '运动', icon: '⚽', id: 5 },
-					{ name: '美妆', icon: '💄', id: 6 },
-					{ name: '图书', icon: '📚', id: 7 },
-					{ name: '更多', icon: '➕', id: 8 }
-				],
-				recommendProducts: [
-					{
-						id: 1,
-						name: 'iPhone 15 Pro',
-						price: 7999,
-						originalPrice: 8999,
-						image: '/static/products/iphone15pro.jpg'
-					},
-					{
-						id: 2,
-						name: 'MacBook Air',
-						price: 8999,
-						originalPrice: 9999,
-						image: '/static/products/macbook-air.jpg'
-					},
-					{
-						id: 3,
-						name: 'AirPods Pro',
-						price: 1999,
-						originalPrice: 2299,
-						image: '/static/products/airpods-pro.jpg'
-					},
-					{
-						id: 4,
-						name: 'iPad Pro',
-						price: 5999,
-						originalPrice: 6999,
-						image: '/static/products/ipad-pro.jpg'
-					}
-				]
+				banners: [],
+				categories: [],
+				recommendProducts: []
 			}
 		},
 		onLoad() {
 			this.loadData()
 		},
 		methods: {
-			loadData() {
-				// 加载首页数据
-				console.log('加载首页数据')
+			async loadData() {
+				try {
+					// 加载商品数据
+					const res = await uni.request({
+						url: '/static/data/products.json',
+						method: 'GET'
+					})
+					
+					if (res.data) {
+						this.banners = res.data.banners || []
+						this.categories = res.data.categories || []
+						// 推荐商品取前4个
+						this.recommendProducts = (res.data.products || []).slice(0, 4).map(product => ({
+							id: product.id,
+							name: product.name,
+							price: product.price,
+							originalPrice: product.originalPrice,
+							image: product.image
+						}))
+					}
+					console.log('首页数据加载完成')
+				} catch (error) {
+					console.error('加载首页数据失败:', error)
+					uni.showToast({
+						title: '数据加载失败',
+						icon: 'error'
+					})
+				}
 			},
 			onBannerClick(banner) {
 				uni.navigateTo({
@@ -120,17 +94,10 @@
 				})
 			},
 			onCategoryClick(category) {
-				if (category.id === 8) {
-					// 更多分类
-					uni.switchTab({
-						url: '/pages/category/category'
-					})
-				} else {
-					// 跳转到商品列表
-					uni.navigateTo({
-						url: `/pages/product/list?categoryId=${category.id}&categoryName=${category.name}`
-					})
-				}
+				// 所有分类按钮都跳转到分类标签页
+				uni.switchTab({
+					url: '/pages/category/category'
+				})
 			},
 			goToProductList() {
 				uni.navigateTo({
