@@ -67,80 +67,9 @@
 				currentCategory: 0,
 				isSearchMode: false,
 				searchResults: [],
-				categories: [
-					{ name: '数码电子', id: 1 },
-					{ name: '服装鞋帽', id: 2 },
-					{ name: '食品饮料', id: 3 },
-					{ name: '家居生活', id: 4 },
-					{ name: '运动户外', id: 5 },
-					{ name: '美妆护肤', id: 6 },
-					{ name: '图书文具', id: 7 },
-					{ name: '母婴用品', id: 8 },
-					{ name: '汽车用品', id: 9 },
-					{ name: '宠物用品', id: 10 }
-				],
-				allProducts: [
-					// 数码电子
-					[
-						{ id: 1, name: 'iPhone 15 Pro', price: 7999, originalPrice: 8999, image: '/static/products/iphone15pro.jpg' },
-						{ id: 2, name: 'MacBook Air', price: 8999, originalPrice: 9999, image: '/static/products/macbook-air.jpg' },
-						{ id: 3, name: 'AirPods Pro', price: 1999, originalPrice: 2299, image: '/static/products/airpods-pro.jpg' },
-						{ id: 4, name: 'iPad Pro', price: 5999, originalPrice: 6999, image: '/static/products/ipad-pro.jpg' },
-						{ id: 5, name: 'Apple Watch', price: 2999, originalPrice: 3299, image: '/static/products/apple-watch.jpg' },
-						{ id: 6, name: 'Samsung Galaxy', price: 5999, originalPrice: 6999, image: '/static/products/galaxy-s24-ultra.jpg' }
-					],
-					// 服装鞋帽
-					[
-						{ id: 7, name: 'Nike运动鞋', price: 899, originalPrice: 1099, image: '/static/placeholders/clothing.svg' },
-						{ id: 8, name: 'Adidas外套', price: 599, originalPrice: 799, image: '/static/placeholders/clothing.svg' },
-						{ id: 9, name: '优衣库T恤', price: 99, originalPrice: 149, image: '/static/placeholders/clothing.svg' },
-						{ id: 10, name: 'Zara连衣裙', price: 299, originalPrice: 399, image: '/static/placeholders/clothing.svg' }
-					],
-					// 食品饮料
-					[
-						{ id: 11, name: '进口巧克力', price: 89, originalPrice: 129, image: '/static/placeholders/food.svg' },
-						{ id: 12, name: '有机咖啡', price: 159, originalPrice: 199, image: '/static/placeholders/food.svg' },
-						{ id: 13, name: '进口红酒', price: 299, originalPrice: 399, image: '/static/placeholders/food.svg' }
-					],
-					// 家居生活
-					[
-						{ id: 14, name: '智能台灯', price: 299, originalPrice: 399, image: '/static/placeholders/home.svg' },
-						{ id: 15, name: '空气净化器', price: 1299, originalPrice: 1599, image: '/static/placeholders/home.svg' },
-						{ id: 16, name: '扫地机器人', price: 1999, originalPrice: 2499, image: '/static/placeholders/home.svg' }
-					],
-					// 运动户外
-					[
-						{ id: 17, name: '瑜伽垫', price: 199, originalPrice: 299, image: '/static/placeholders/sports.svg' },
-						{ id: 18, name: '跑步机', price: 2999, originalPrice: 3999, image: '/static/placeholders/sports.svg' },
-						{ id: 19, name: '登山包', price: 599, originalPrice: 799, image: '/static/placeholders/sports.svg' }
-					],
-					// 美妆护肤
-					[
-						{ id: 20, name: 'SK-II精华', price: 1299, originalPrice: 1599, image: '/static/placeholders/beauty.svg' },
-						{ id: 21, name: '兰蔻面霜', price: 899, originalPrice: 1099, image: '/static/placeholders/beauty.svg' },
-						{ id: 22, name: '雅诗兰黛口红', price: 299, originalPrice: 399, image: '/static/placeholders/beauty.svg' }
-					],
-					// 图书文具
-					[
-						{ id: 23, name: '编程书籍', price: 89, originalPrice: 129, image: '/static/placeholders/books.svg' },
-						{ id: 24, name: '笔记本套装', price: 199, originalPrice: 299, image: '/static/placeholders/books.svg' }
-					],
-					// 母婴用品
-					[
-						{ id: 25, name: '婴儿推车', price: 1299, originalPrice: 1599, image: '/static/placeholders/baby.svg' },
-						{ id: 26, name: '儿童安全座椅', price: 1999, originalPrice: 2499, image: '/static/placeholders/baby.svg' }
-					],
-					// 汽车用品
-					[
-						{ id: 27, name: '车载充电器', price: 99, originalPrice: 149, image: '/static/placeholders/car.svg' },
-						{ id: 28, name: '汽车脚垫', price: 299, originalPrice: 399, image: '/static/placeholders/car.svg' }
-					],
-					// 宠物用品
-					[
-						{ id: 29, name: '宠物玩具', price: 59, originalPrice: 89, image: '/static/placeholders/pet.svg' },
-						{ id: 30, name: '宠物食品', price: 199, originalPrice: 299, image: '/static/placeholders/pet.svg' }
-					]
-				]
+				categories: [],
+				allProducts: [],
+				productsData: null
 			}
 		},
 		computed: {
@@ -154,19 +83,50 @@
 			},
 			// 获取所有商品的扁平化数组，用于搜索
 			flatProducts() {
-				let allProducts = []
-				this.allProducts.forEach(categoryProducts => {
-					allProducts = allProducts.concat(categoryProducts)
-				})
-				return allProducts
+				if (!this.productsData || !this.productsData.products) {
+					return []
+				}
+				return this.productsData.products
 			}
 		},
 		onLoad(options) {
+			this.loadData()
 			if (options.categoryId) {
 				this.currentCategory = parseInt(options.categoryId) - 1
 			}
 		},
 		methods: {
+			loadData() {
+				// 从 JSON 文件加载数据
+				uni.request({
+					url: '/static/data/products.json',
+					method: 'GET',
+					success: (res) => {
+						if (res.statusCode === 200) {
+							this.productsData = res.data
+							this.categories = res.data.categories || []
+							this.processProductsData()
+						}
+					},
+					fail: (err) => {
+						console.error('加载商品数据失败:', err)
+						uni.showToast({
+							title: '加载数据失败',
+							icon: 'none'
+						})
+					}
+				})
+			},
+			processProductsData() {
+				// 按分类组织商品数据
+				this.allProducts = []
+				this.categories.forEach(category => {
+					const categoryProducts = this.productsData.products.filter(product => 
+						product.categoryId === category.id
+					)
+					this.allProducts.push(categoryProducts)
+				})
+			},
 			selectCategory(index) {
 				// 如果当前处于搜索模式，先清除搜索状态
 				if (this.isSearchMode) {

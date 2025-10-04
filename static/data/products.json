@@ -347,6 +347,1165 @@
           "content": "AI摄影功能很强大，屏幕显示效果也很好。"
         }
       ]
+    },
+    {
+      "id": 7,
+      "name": "Nike Air Max 270 运动鞋",
+      "desc": "经典气垫设计，舒适透气，时尚百搭",
+      "price": 899,
+      "originalPrice": 1099,
+      "sales": 234,
+      "image": "/static/placeholders/clothing.svg",
+      "images": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "tags": ["经典款", "气垫设计", "舒适透气"],
+      "categoryId": 2,
+      "categoryName": "服装",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "尺码", "value": "42码" },
+        { "label": "材质", "value": "网面+皮革" },
+        { "label": "鞋底", "value": "Air Max气垫" },
+        { "label": "适用", "value": "日常穿着" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Nike" },
+        { "label": "型号", "value": "Air Max 270" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "尺码", "value": "42码" },
+        { "label": "材质", "value": "网面+皮革" },
+        { "label": "鞋底技术", "value": "Air Max气垫" },
+        { "label": "重量", "value": "约320g" },
+        { "label": "产地", "value": "越南" }
+      ],
+      "detailImages": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***111",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-15",
+          "content": "鞋子很舒适，气垫设计很棒，走路不累脚。"
+        },
+        {
+          "name": "用户***222",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2024-01-12",
+          "content": "外观时尚，质量不错，性价比很高。"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Adidas 三叶草外套",
+      "desc": "经典三叶草设计，保暖舒适，运动休闲",
+      "price": 599,
+      "originalPrice": 799,
+      "sales": 156,
+      "image": "/static/placeholders/clothing.svg",
+      "images": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "tags": ["三叶草", "保暖", "运动休闲"],
+      "categoryId": 2,
+      "categoryName": "服装",
+      "specs": [
+        { "label": "颜色", "value": "黑色" },
+        { "label": "尺码", "value": "L码" },
+        { "label": "材质", "value": "聚酯纤维" },
+        { "label": "厚度", "value": "中等厚度" },
+        { "label": "风格", "value": "运动休闲" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Adidas" },
+        { "label": "系列", "value": "三叶草" },
+        { "label": "颜色", "value": "黑色" },
+        { "label": "尺码", "value": "L码" },
+        { "label": "材质", "value": "聚酯纤维" },
+        { "label": "厚度", "value": "中等厚度" },
+        { "label": "重量", "value": "约450g" },
+        { "label": "产地", "value": "中国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***333",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-14",
+          "content": "外套很保暖，三叶草设计经典，质量很好。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "优衣库 基础款T恤",
+      "desc": "纯棉材质，舒适透气，简约百搭",
+      "price": 99,
+      "originalPrice": 149,
+      "sales": 567,
+      "image": "/static/placeholders/clothing.svg",
+      "images": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "tags": ["纯棉", "基础款", "百搭"],
+      "categoryId": 2,
+      "categoryName": "服装",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "尺码", "value": "M码" },
+        { "label": "材质", "value": "100%纯棉" },
+        { "label": "厚度", "value": "适中" },
+        { "label": "风格", "value": "简约" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "优衣库" },
+        { "label": "型号", "value": "基础款T恤" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "尺码", "value": "M码" },
+        { "label": "材质", "value": "100%纯棉" },
+        { "label": "厚度", "value": "适中" },
+        { "label": "重量", "value": "约150g" },
+        { "label": "产地", "value": "中国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***444",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-13",
+          "content": "纯棉材质很舒适，基础款很百搭，性价比很高。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Zara 时尚连衣裙",
+      "desc": "时尚设计，优雅大方，适合多种场合",
+      "price": 299,
+      "originalPrice": 399,
+      "sales": 89,
+      "image": "/static/placeholders/clothing.svg",
+      "images": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "tags": ["时尚", "优雅", "多场合"],
+      "categoryId": 2,
+      "categoryName": "服装",
+      "specs": [
+        { "label": "颜色", "value": "黑色" },
+        { "label": "尺码", "value": "S码" },
+        { "label": "材质", "value": "聚酯纤维" },
+        { "label": "长度", "value": "中长款" },
+        { "label": "风格", "value": "优雅" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Zara" },
+        { "label": "型号", "value": "时尚连衣裙" },
+        { "label": "颜色", "value": "黑色" },
+        { "label": "尺码", "value": "S码" },
+        { "label": "材质", "value": "聚酯纤维" },
+        { "label": "长度", "value": "中长款" },
+        { "label": "重量", "value": "约200g" },
+        { "label": "产地", "value": "西班牙" }
+      ],
+      "detailImages": [
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg",
+        "/static/placeholders/clothing.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***555",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2024-01-11",
+          "content": "连衣裙很时尚，设计优雅，适合正式场合。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Godiva 进口巧克力礼盒",
+      "desc": "比利时进口，纯手工制作，口感丝滑",
+      "price": 89,
+      "originalPrice": 129,
+      "sales": 123,
+      "image": "/static/placeholders/food.svg",
+      "images": [
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg"
+      ],
+      "tags": ["进口", "手工制作", "丝滑口感"],
+      "categoryId": 3,
+      "categoryName": "食品",
+      "specs": [
+        { "label": "口味", "value": "混合口味" },
+        { "label": "重量", "value": "200g" },
+        { "label": "产地", "value": "比利时" },
+        { "label": "保质期", "value": "12个月" },
+        { "label": "包装", "value": "礼盒装" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Godiva" },
+        { "label": "型号", "value": "进口巧克力礼盒" },
+        { "label": "口味", "value": "混合口味" },
+        { "label": "重量", "value": "200g" },
+        { "label": "产地", "value": "比利时" },
+        { "label": "保质期", "value": "12个月" },
+        { "label": "包装", "value": "礼盒装" },
+        { "label": "储存", "value": "阴凉干燥处" }
+      ],
+      "detailImages": [
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***666",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-10",
+          "content": "巧克力很香浓，口感丝滑，包装精美，送礼很合适。"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "星巴克 有机咖啡豆",
+      "desc": "精选有机咖啡豆，浓郁香醇，现磨现煮",
+      "price": 159,
+      "originalPrice": 199,
+      "sales": 78,
+      "image": "/static/placeholders/food.svg",
+      "images": [
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg"
+      ],
+      "tags": ["有机", "香醇", "现磨"],
+      "categoryId": 3,
+      "categoryName": "食品",
+      "specs": [
+        { "label": "口味", "value": "中度烘焙" },
+        { "label": "重量", "value": "250g" },
+        { "label": "产地", "value": "哥伦比亚" },
+        { "label": "保质期", "value": "18个月" },
+        { "label": "包装", "value": "密封袋装" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "星巴克" },
+        { "label": "型号", "value": "有机咖啡豆" },
+        { "label": "口味", "value": "中度烘焙" },
+        { "label": "重量", "value": "250g" },
+        { "label": "产地", "value": "哥伦比亚" },
+        { "label": "保质期", "value": "18个月" },
+        { "label": "包装", "value": "密封袋装" },
+        { "label": "储存", "value": "避光密封" }
+      ],
+      "detailImages": [
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***777",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 4,
+          "date": "2024-01-09",
+          "content": "咖啡豆很香，研磨后冲泡味道浓郁，性价比不错。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "拉菲 进口红酒",
+      "desc": "法国进口，经典波尔多，口感醇厚",
+      "price": 299,
+      "originalPrice": 399,
+      "sales": 45,
+      "image": "/static/placeholders/food.svg",
+      "images": [
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg"
+      ],
+      "tags": ["进口", "经典", "醇厚"],
+      "categoryId": 3,
+      "categoryName": "食品",
+      "specs": [
+        { "label": "年份", "value": "2020年" },
+        { "label": "容量", "value": "750ml" },
+        { "label": "产地", "value": "法国" },
+        { "label": "酒精度", "value": "13.5%" },
+        { "label": "包装", "value": "原装瓶" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "拉菲" },
+        { "label": "型号", "value": "进口红酒" },
+        { "label": "年份", "value": "2020年" },
+        { "label": "容量", "value": "750ml" },
+        { "label": "产地", "value": "法国" },
+        { "label": "酒精度", "value": "13.5%" },
+        { "label": "包装", "value": "原装瓶" },
+        { "label": "储存", "value": "恒温恒湿" }
+      ],
+      "detailImages": [
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg",
+        "/static/placeholders/food.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***888",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 5,
+          "date": "2024-01-08",
+          "content": "红酒口感很好，醇厚香浓，包装精美，适合收藏。"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "小米 智能台灯",
+      "desc": "智能调光，护眼设计，手机APP控制",
+      "price": 299,
+      "originalPrice": 399,
+      "sales": 234,
+      "image": "/static/placeholders/home.svg",
+      "images": [
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg"
+      ],
+      "tags": ["智能", "护眼", "APP控制"],
+      "categoryId": 4,
+      "categoryName": "家居",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "功率", "value": "12W" },
+        { "label": "亮度", "value": "可调节" },
+        { "label": "控制", "value": "APP+触摸" },
+        { "label": "材质", "value": "ABS塑料" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "小米" },
+        { "label": "型号", "value": "智能台灯" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "功率", "value": "12W" },
+        { "label": "亮度", "value": "可调节" },
+        { "label": "控制方式", "value": "APP+触摸" },
+        { "label": "材质", "value": "ABS塑料" },
+        { "label": "重量", "value": "约800g" }
+      ],
+      "detailImages": [
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***999",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-07",
+          "content": "台灯很智能，亮度调节很方便，护眼效果不错。"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "飞利浦 空气净化器",
+      "desc": "高效过滤，智能监测，静音运行",
+      "price": 1299,
+      "originalPrice": 1599,
+      "sales": 89,
+      "image": "/static/placeholders/home.svg",
+      "images": [
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg"
+      ],
+      "tags": ["高效过滤", "智能监测", "静音"],
+      "categoryId": 4,
+      "categoryName": "家居",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "适用面积", "value": "35㎡" },
+        { "label": "过滤技术", "value": "HEPA过滤" },
+        { "label": "噪音", "value": "<40dB" },
+        { "label": "控制", "value": "APP+触摸" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "飞利浦" },
+        { "label": "型号", "value": "空气净化器" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "适用面积", "value": "35㎡" },
+        { "label": "过滤技术", "value": "HEPA过滤" },
+        { "label": "噪音", "value": "<40dB" },
+        { "label": "控制方式", "value": "APP+触摸" },
+        { "label": "重量", "value": "约5.5kg" }
+      ],
+      "detailImages": [
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***000",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 4,
+          "date": "2024-01-06",
+          "content": "净化效果很好，运行很安静，APP控制很方便。"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "科沃斯 扫地机器人",
+      "desc": "智能规划，自动回充，深度清洁",
+      "price": 1999,
+      "originalPrice": 2499,
+      "sales": 67,
+      "image": "/static/placeholders/home.svg",
+      "images": [
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg"
+      ],
+      "tags": ["智能规划", "自动回充", "深度清洁"],
+      "categoryId": 4,
+      "categoryName": "家居",
+      "specs": [
+        { "label": "颜色", "value": "白色" },
+        { "label": "电池", "value": "5200mAh" },
+        { "label": "续航", "value": "150分钟" },
+        { "label": "吸力", "value": "2000Pa" },
+        { "label": "控制", "value": "APP+语音" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "科沃斯" },
+        { "label": "型号", "value": "扫地机器人" },
+        { "label": "颜色", "value": "白色" },
+        { "label": "电池", "value": "5200mAh" },
+        { "label": "续航", "value": "150分钟" },
+        { "label": "吸力", "value": "2000Pa" },
+        { "label": "控制方式", "value": "APP+语音" },
+        { "label": "重量", "value": "约3.8kg" }
+      ],
+      "detailImages": [
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg",
+        "/static/placeholders/home.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***111",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 5,
+          "date": "2024-01-05",
+          "content": "机器人很智能，清洁效果很好，自动回充很方便。"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Lululemon 瑜伽垫",
+      "desc": "防滑设计，环保材质，专业瑜伽练习",
+      "price": 199,
+      "originalPrice": 299,
+      "sales": 156,
+      "image": "/static/placeholders/sports.svg",
+      "images": [
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg"
+      ],
+      "tags": ["防滑", "环保", "专业"],
+      "categoryId": 5,
+      "categoryName": "运动",
+      "specs": [
+        { "label": "颜色", "value": "紫色" },
+        { "label": "尺寸", "value": "183×61cm" },
+        { "label": "厚度", "value": "5mm" },
+        { "label": "材质", "value": "TPE" },
+        { "label": "重量", "value": "约1.2kg" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Lululemon" },
+        { "label": "型号", "value": "瑜伽垫" },
+        { "label": "颜色", "value": "紫色" },
+        { "label": "尺寸", "value": "183×61cm" },
+        { "label": "厚度", "value": "5mm" },
+        { "label": "材质", "value": "TPE" },
+        { "label": "重量", "value": "约1.2kg" },
+        { "label": "产地", "value": "中国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***222",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-04",
+          "content": "瑜伽垫质量很好，防滑效果不错，练习时很稳定。"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Keep 智能跑步机",
+      "desc": "智能调速，心率监测，APP课程",
+      "price": 2999,
+      "originalPrice": 3999,
+      "sales": 45,
+      "image": "/static/placeholders/sports.svg",
+      "images": [
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg"
+      ],
+      "tags": ["智能调速", "心率监测", "APP课程"],
+      "categoryId": 5,
+      "categoryName": "运动",
+      "specs": [
+        { "label": "颜色", "value": "黑色" },
+        { "label": "马力", "value": "2.5HP" },
+        { "label": "速度", "value": "1-16km/h" },
+        { "label": "坡度", "value": "0-15%" },
+        { "label": "控制", "value": "APP+触摸" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Keep" },
+        { "label": "型号", "value": "智能跑步机" },
+        { "label": "颜色", "value": "黑色" },
+        { "label": "马力", "value": "2.5HP" },
+        { "label": "速度", "value": "1-16km/h" },
+        { "label": "坡度", "value": "0-15%" },
+        { "label": "控制方式", "value": "APP+触摸" },
+        { "label": "重量", "value": "约85kg" }
+      ],
+      "detailImages": [
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***333",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2024-01-03",
+          "content": "跑步机很智能，APP课程很丰富，跑步体验不错。"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "North Face 登山包",
+      "desc": "专业登山，大容量设计，舒适背负",
+      "price": 599,
+      "originalPrice": 799,
+      "sales": 78,
+      "image": "/static/placeholders/sports.svg",
+      "images": [
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg"
+      ],
+      "tags": ["专业登山", "大容量", "舒适背负"],
+      "categoryId": 5,
+      "categoryName": "运动",
+      "specs": [
+        { "label": "颜色", "value": "黑色" },
+        { "label": "容量", "value": "65L" },
+        { "label": "材质", "value": "尼龙" },
+        { "label": "重量", "value": "约2.1kg" },
+        { "label": "适用", "value": "登山徒步" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "North Face" },
+        { "label": "型号", "value": "登山包" },
+        { "label": "颜色", "value": "黑色" },
+        { "label": "容量", "value": "65L" },
+        { "label": "材质", "value": "尼龙" },
+        { "label": "重量", "value": "约2.1kg" },
+        { "label": "适用场景", "value": "登山徒步" },
+        { "label": "产地", "value": "越南" }
+      ],
+      "detailImages": [
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg",
+        "/static/placeholders/sports.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***444",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2024-01-02",
+          "content": "登山包质量很好，容量大，背负系统很舒适。"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "SK-II 神仙水精华",
+      "desc": "经典护肤，改善肌肤，提亮肤色",
+      "price": 1299,
+      "originalPrice": 1599,
+      "sales": 234,
+      "image": "/static/placeholders/beauty.svg",
+      "images": [
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg"
+      ],
+      "tags": ["经典护肤", "改善肌肤", "提亮肤色"],
+      "categoryId": 6,
+      "categoryName": "美妆",
+      "specs": [
+        { "label": "容量", "value": "230ml" },
+        { "label": "功效", "value": "保湿提亮" },
+        { "label": "肤质", "value": "所有肤质" },
+        { "label": "产地", "value": "日本" },
+        { "label": "保质期", "value": "36个月" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "SK-II" },
+        { "label": "型号", "value": "神仙水精华" },
+        { "label": "容量", "value": "230ml" },
+        { "label": "功效", "value": "保湿提亮" },
+        { "label": "适用肤质", "value": "所有肤质" },
+        { "label": "产地", "value": "日本" },
+        { "label": "保质期", "value": "36个月" },
+        { "label": "储存", "value": "阴凉干燥处" }
+      ],
+      "detailImages": [
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***555",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2024-01-01",
+          "content": "神仙水效果很好，用后肌肤明显改善，值得推荐。"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "兰蔻 小黑瓶面霜",
+      "desc": "抗衰老，紧致肌肤，深层滋养",
+      "price": 899,
+      "originalPrice": 1099,
+      "sales": 167,
+      "image": "/static/placeholders/beauty.svg",
+      "images": [
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg"
+      ],
+      "tags": ["抗衰老", "紧致肌肤", "深层滋养"],
+      "categoryId": 6,
+      "categoryName": "美妆",
+      "specs": [
+        { "label": "容量", "value": "50ml" },
+        { "label": "功效", "value": "抗衰老" },
+        { "label": "肤质", "value": "成熟肌肤" },
+        { "label": "产地", "value": "法国" },
+        { "label": "保质期", "value": "36个月" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "兰蔻" },
+        { "label": "型号", "value": "小黑瓶面霜" },
+        { "label": "容量", "value": "50ml" },
+        { "label": "功效", "value": "抗衰老" },
+        { "label": "适用肤质", "value": "成熟肌肤" },
+        { "label": "产地", "value": "法国" },
+        { "label": "保质期", "value": "36个月" },
+        { "label": "储存", "value": "阴凉干燥处" }
+      ],
+      "detailImages": [
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***666",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2023-12-31",
+          "content": "面霜质地很好，抗衰老效果明显，值得购买。"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "雅诗兰黛 口红套装",
+      "desc": "经典色号，持久显色，滋润不干燥",
+      "price": 299,
+      "originalPrice": 399,
+      "sales": 345,
+      "image": "/static/placeholders/beauty.svg",
+      "images": [
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg"
+      ],
+      "tags": ["经典色号", "持久显色", "滋润"],
+      "categoryId": 6,
+      "categoryName": "美妆",
+      "specs": [
+        { "label": "色号", "value": "经典红" },
+        { "label": "质地", "value": "丝绒" },
+        { "label": "容量", "value": "3.5g" },
+        { "label": "产地", "value": "美国" },
+        { "label": "保质期", "value": "36个月" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "雅诗兰黛" },
+        { "label": "型号", "value": "口红套装" },
+        { "label": "色号", "value": "经典红" },
+        { "label": "质地", "value": "丝绒" },
+        { "label": "容量", "value": "3.5g" },
+        { "label": "产地", "value": "美国" },
+        { "label": "保质期", "value": "36个月" },
+        { "label": "储存", "value": "阴凉干燥处" }
+      ],
+      "detailImages": [
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg",
+        "/static/placeholders/beauty.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***777",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2023-12-30",
+          "content": "口红颜色很正，持久度不错，质地很滋润。"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "《JavaScript高级程序设计》",
+      "desc": "前端开发经典教材，深入浅出，实用性强",
+      "price": 89,
+      "originalPrice": 129,
+      "sales": 456,
+      "image": "/static/placeholders/books.svg",
+      "images": [
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg"
+      ],
+      "tags": ["前端开发", "经典教材", "实用"],
+      "categoryId": 7,
+      "categoryName": "图书",
+      "specs": [
+        { "label": "作者", "value": "Nicholas C. Zakas" },
+        { "label": "页数", "value": "800页" },
+        { "label": "语言", "value": "中文" },
+        { "label": "出版社", "value": "人民邮电出版社" },
+        { "label": "版本", "value": "第4版" }
+      ],
+      "params": [
+        { "label": "书名", "value": "JavaScript高级程序设计" },
+        { "label": "作者", "value": "Nicholas C. Zakas" },
+        { "label": "页数", "value": "800页" },
+        { "label": "语言", "value": "中文" },
+        { "label": "出版社", "value": "人民邮电出版社" },
+        { "label": "版本", "value": "第4版" },
+        { "label": "ISBN", "value": "978-7-115-48789-0" },
+        { "label": "出版日期", "value": "2020年" }
+      ],
+      "detailImages": [
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***888",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2023-12-29",
+          "content": "书的内容很全面，讲解深入浅出，是学习JavaScript的好教材。"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Moleskine 笔记本套装",
+      "desc": "经典设计，优质纸张，书写流畅",
+      "price": 199,
+      "originalPrice": 299,
+      "sales": 234,
+      "image": "/static/placeholders/books.svg",
+      "images": [
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg"
+      ],
+      "tags": ["经典设计", "优质纸张", "书写流畅"],
+      "categoryId": 7,
+      "categoryName": "图书",
+      "specs": [
+        { "label": "颜色", "value": "黑色" },
+        { "label": "尺寸", "value": "A5" },
+        { "label": "页数", "value": "240页" },
+        { "label": "纸张", "value": "无酸纸" },
+        { "label": "装订", "value": "线装" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Moleskine" },
+        { "label": "型号", "value": "笔记本套装" },
+        { "label": "颜色", "value": "黑色" },
+        { "label": "尺寸", "value": "A5" },
+        { "label": "页数", "value": "240页" },
+        { "label": "纸张", "value": "无酸纸" },
+        { "label": "装订方式", "value": "线装" },
+        { "label": "产地", "value": "意大利" }
+      ],
+      "detailImages": [
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg",
+        "/static/placeholders/books.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***999",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2023-12-28",
+          "content": "笔记本质量很好，纸张很顺滑，书写体验不错。"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "好孩子 婴儿推车",
+      "desc": "安全舒适，轻便易携，多功能设计",
+      "price": 1299,
+      "originalPrice": 1599,
+      "sales": 123,
+      "image": "/static/placeholders/baby.svg",
+      "images": [
+        "/static/placeholders/baby.svg",
+        "/static/placeholders/baby.svg",
+        "/static/placeholders/baby.svg"
+      ],
+      "tags": ["安全舒适", "轻便易携", "多功能"],
+      "categoryId": 8,
+      "categoryName": "母婴",
+      "specs": [
+        { "label": "颜色", "value": "蓝色" },
+        { "label": "适用年龄", "value": "0-3岁" },
+        { "label": "重量", "value": "6.5kg" },
+        { "label": "材质", "value": "铝合金" },
+        { "label": "功能", "value": "可折叠" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "好孩子" },
+        { "label": "型号", "value": "婴儿推车" },
+        { "label": "颜色", "value": "蓝色" },
+        { "label": "适用年龄", "value": "0-3岁" },
+        { "label": "重量", "value": "6.5kg" },
+        { "label": "材质", "value": "铝合金" },
+        { "label": "功能", "value": "可折叠" },
+        { "label": "产地", "value": "中国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/baby.svg",
+        "/static/placeholders/baby.svg",
+        "/static/placeholders/baby.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***000",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2023-12-27",
+          "content": "推车很轻便，折叠方便，宝宝坐着很舒适。"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Britax 儿童安全座椅",
+      "desc": "安全可靠，舒适设计，安装简便",
+      "price": 1999,
+      "originalPrice": 2499,
+      "sales": 67,
+      "image": "/static/placeholders/baby.svg",
+      "images": [
+        "/static/placeholders/baby.svg",
+        "/static/placeholders/baby.svg",
+        "/static/placeholders/baby.svg"
+      ],
+      "tags": ["安全可靠", "舒适设计", "安装简便"],
+      "categoryId": 8,
+      "categoryName": "母婴",
+      "specs": [
+        { "label": "颜色", "value": "红色" },
+        { "label": "适用年龄", "value": "9个月-12岁" },
+        { "label": "重量", "value": "8.2kg" },
+        { "label": "材质", "value": "塑料+金属" },
+        { "label": "认证", "value": "3C认证" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Britax" },
+        { "label": "型号", "value": "儿童安全座椅" },
+        { "label": "颜色", "value": "红色" },
+        { "label": "适用年龄", "value": "9个月-12岁" },
+        { "label": "重量", "value": "8.2kg" },
+        { "label": "材质", "value": "塑料+金属" },
+        { "label": "认证", "value": "3C认证" },
+        { "label": "产地", "value": "德国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/baby.svg",
+        "/static/placeholders/baby.svg",
+        "/static/placeholders/baby.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***111",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2023-12-26",
+          "content": "安全座椅质量很好，安装简单，宝宝坐着很安全。"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Anker 车载充电器",
+      "desc": "快充技术，双USB接口，安全可靠",
+      "price": 99,
+      "originalPrice": 149,
+      "sales": 456,
+      "image": "/static/placeholders/car.svg",
+      "images": [
+        "/static/placeholders/car.svg",
+        "/static/placeholders/car.svg",
+        "/static/placeholders/car.svg"
+      ],
+      "tags": ["快充技术", "双USB", "安全可靠"],
+      "categoryId": 9,
+      "categoryName": "汽车",
+      "specs": [
+        { "label": "颜色", "value": "黑色" },
+        { "label": "接口", "value": "双USB" },
+        { "label": "功率", "value": "24W" },
+        { "label": "材质", "value": "ABS塑料" },
+        { "label": "适用", "value": "12V/24V" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "Anker" },
+        { "label": "型号", "value": "车载充电器" },
+        { "label": "颜色", "value": "黑色" },
+        { "label": "接口", "value": "双USB" },
+        { "label": "功率", "value": "24W" },
+        { "label": "材质", "value": "ABS塑料" },
+        { "label": "适用电压", "value": "12V/24V" },
+        { "label": "产地", "value": "中国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/car.svg",
+        "/static/placeholders/car.svg",
+        "/static/placeholders/car.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***222",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2023-12-25",
+          "content": "充电器充电很快，双USB接口很方便，质量不错。"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "3M 汽车脚垫",
+      "desc": "环保材质，防滑设计，易清洗",
+      "price": 299,
+      "originalPrice": 399,
+      "sales": 234,
+      "image": "/static/placeholders/car.svg",
+      "images": [
+        "/static/placeholders/car.svg",
+        "/static/placeholders/car.svg",
+        "/static/placeholders/car.svg"
+      ],
+      "tags": ["环保材质", "防滑设计", "易清洗"],
+      "categoryId": 9,
+      "categoryName": "汽车",
+      "specs": [
+        { "label": "颜色", "value": "黑色" },
+        { "label": "材质", "value": "TPE" },
+        { "label": "厚度", "value": "3mm" },
+        { "label": "适用车型", "value": "通用型" },
+        { "label": "功能", "value": "防滑防水" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "3M" },
+        { "label": "型号", "value": "汽车脚垫" },
+        { "label": "颜色", "value": "黑色" },
+        { "label": "材质", "value": "TPE" },
+        { "label": "厚度", "value": "3mm" },
+        { "label": "适用车型", "value": "通用型" },
+        { "label": "功能", "value": "防滑防水" },
+        { "label": "产地", "value": "中国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/car.svg",
+        "/static/placeholders/car.svg",
+        "/static/placeholders/car.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***333",
+          "avatar": "/static/avatars/avatar3.svg",
+          "rating": 5,
+          "date": "2023-12-24",
+          "content": "脚垫质量很好，防滑效果不错，清洗很方便。"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "KONG 宠物玩具球",
+      "desc": "耐咬设计，互动性强，安全环保",
+      "price": 59,
+      "originalPrice": 89,
+      "sales": 345,
+      "image": "/static/placeholders/pet.svg",
+      "images": [
+        "/static/placeholders/pet.svg",
+        "/static/placeholders/pet.svg",
+        "/static/placeholders/pet.svg"
+      ],
+      "tags": ["耐咬设计", "互动性强", "安全环保"],
+      "categoryId": 10,
+      "categoryName": "宠物",
+      "specs": [
+        { "label": "颜色", "value": "红色" },
+        { "label": "尺寸", "value": "M号" },
+        { "label": "材质", "value": "天然橡胶" },
+        { "label": "适用", "value": "中小型犬" },
+        { "label": "功能", "value": "互动玩具" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "KONG" },
+        { "label": "型号", "value": "宠物玩具球" },
+        { "label": "颜色", "value": "红色" },
+        { "label": "尺寸", "value": "M号" },
+        { "label": "材质", "value": "天然橡胶" },
+        { "label": "适用宠物", "value": "中小型犬" },
+        { "label": "功能", "value": "互动玩具" },
+        { "label": "产地", "value": "美国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/pet.svg",
+        "/static/placeholders/pet.svg",
+        "/static/placeholders/pet.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***444",
+          "avatar": "/static/avatars/avatar1.svg",
+          "rating": 5,
+          "date": "2023-12-23",
+          "content": "玩具球很耐咬，狗狗很喜欢，质量很好。"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "皇家 宠物干粮",
+      "desc": "营养均衡，易消化，适口性好",
+      "price": 199,
+      "originalPrice": 299,
+      "sales": 567,
+      "image": "/static/placeholders/pet.svg",
+      "images": [
+        "/static/placeholders/pet.svg",
+        "/static/placeholders/pet.svg",
+        "/static/placeholders/pet.svg"
+      ],
+      "tags": ["营养均衡", "易消化", "适口性好"],
+      "categoryId": 10,
+      "categoryName": "宠物",
+      "specs": [
+        { "label": "口味", "value": "鸡肉味" },
+        { "label": "重量", "value": "2kg" },
+        { "label": "适用", "value": "成犬" },
+        { "label": "年龄", "value": "1-7岁" },
+        { "label": "保质期", "value": "18个月" }
+      ],
+      "params": [
+        { "label": "品牌", "value": "皇家" },
+        { "label": "型号", "value": "宠物干粮" },
+        { "label": "口味", "value": "鸡肉味" },
+        { "label": "重量", "value": "2kg" },
+        { "label": "适用宠物", "value": "成犬" },
+        { "label": "适用年龄", "value": "1-7岁" },
+        { "label": "保质期", "value": "18个月" },
+        { "label": "产地", "value": "法国" }
+      ],
+      "detailImages": [
+        "/static/placeholders/pet.svg",
+        "/static/placeholders/pet.svg",
+        "/static/placeholders/pet.svg"
+      ],
+      "reviews": [
+        {
+          "name": "用户***555",
+          "avatar": "/static/avatars/avatar2.svg",
+          "rating": 4,
+          "date": "2023-12-22",
+          "content": "狗粮营养很均衡，狗狗很喜欢吃，消化也很好。"
+        }
+      ]
     }
   ],
   "categories": [
